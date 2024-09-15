@@ -1,0 +1,50 @@
+@import url("reset.css");
+
+/*--------------------*/
+body {
+	overflow-x: hidden;
+	font-size: 20px;
+}
+* {
+	color: green;
+}
+[class*="xt"] {
+	color: yellow;
+}
+p {
+	color: blue;
+}
+#history {
+	color: brown;
+}
+.formation * {
+	color: darkblue;
+}
+.formation + p {
+	color: rgb(27, 188, 115);
+}
+.traditions-content p {
+	color: rgb(44, 74, 64);
+}
+h3 {
+	color: deeppink;
+}
+.nowadays-content > p {
+	color: black;
+}
+.nowadays-content ~ p {
+	color: chartreuse;
+}
+.footer-content .link {
+	color: coral;
+}
+.linked {
+	color: magenta;
+}
+div.text {
+	color: chocolate;
+}
+.ukrainka,
+.franko {
+	color: darkorange;
+}
