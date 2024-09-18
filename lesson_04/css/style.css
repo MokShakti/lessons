@@ -1,0 +1,127 @@
+/* local fonts */
+@import url("fonts.css");
+
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:regular,600");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500");
+
+/* null */
+
+@import url("reset.css");
+
+/*--------------------*/
+body {
+	font-family: "Cinzel", sans-serif;
+	line-height: 1.5;
+	color: #132238;
+}
+.header-title p {
+	font-family: "Cinzel", sans-serif;
+	font-style: italic;
+	font-weight: 100;
+	text-align: center;
+	color: #556070;
+}
+h1 {
+	font-family: "Gilroy", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+.main-article {
+	text-align: left;
+	text-transform: lowercase;
+}
+.main-article span {
+	text-decoration: underline;
+	color: #a53dff;
+}
+h2 {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.compare p {
+	text-align: right;
+}
+.compare span {
+	text-decoration: overline;
+	color: #a53dff;
+}
+h3 {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.description p {
+	text-align: justify;
+	letter-spacing: 0.3125rem;
+}
+.description span {
+	text-decoration: line-through;
+	text-decoration-color: #132238;
+	text-decoration-style: wavy;
+	color: #a53dff;
+}
+h4 {
+	font-family: "Work Sans", sans-serif;
+	color: #132238;
+	font-size: 38px;
+	font-weight: 600;
+	line-height: 131.579%;
+	text-align: center;
+}
+.homework-container p {
+	font-family: "Work Sans";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 133.333%;
+	text-align: center;
+	color: #556070;
+}
+h5 {
+	font-family: "DM Sans", sans-serif;
+	font-size: 88px;
+	font-weight: 700;
+	line-height: 107.955%;
+	color: #1e1b39;
+	text-align: center;
+}
+.homework-about p {
+	font-family: "DM Sans", sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 175%;
+	text-align: center;
+	color: #474464;
+}
+h6 {
+	font-family: "Roboto", sans-serif;
+	font-size: 50px;
+	font-weight: 500;
+	line-height: 132%;
+	letter-spacing: 0.0625rem;
+	color: #091133;
+	text-align: center;
+}
+.homework-product p {
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 166.667%;
+	text-align: center;
+	color: #505f98;
+}
+footer p {
+	color: #ff0000;
+	text-shadow: 0.125rem 0.125rem 0.3125rem #ff0000;
+	text-transform: capitalize;
+}
+footer a {
+	word-spacing: 0.3125rem;
+}
