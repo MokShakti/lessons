@@ -1,0 +1,215 @@
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500");
+
+/* null */
+
+@import url("reset.css");
+
+/*--------------------*/
+body {
+	overflow-x: hidden;
+}
+.header-menu {
+	max-width: 620px;
+	margin-inline: auto;
+	font-family: "Manrope", sans-serif;
+	margin-bottom: 30px;
+}
+.list-menu {
+	text-align: center;
+}
+.list {
+	display: inline-block;
+	font-size: 20px;
+	padding-inline-start: 1.25rem;
+}
+.main-container {
+	font-family: "Manrope", sans-serif;
+	margin: 0 10px;
+}
+.main-container p {
+	line-height: 1.5;
+	padding-bottom: 20px;
+}
+.main-container img {
+	margin: 20px 100px;
+}
+h1 {
+	font-family: "Manrope", sans-serif;
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+h2 {
+	font-family: "Manrope", sans-serif;
+	font-size: 28px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+footer a {
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+}
+
+/* Homework */
+
+.main-dark {
+	max-width: 1920px;
+	background-color: #141414;
+	/* margin-inline: auto; */
+	font-family: "Manrope", sans-serif;
+	overflow: hidden;
+}
+.dark-list {
+}
+.header-title {
+	margin-bottom: 5rem;
+}
+.streaming {
+	color: #ffffff;
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 1.5;
+	margin: 0 160px 14px 161px;
+}
+.stream {
+	color: #999;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	margin: 0 162px 80px 161px;
+}
+.dark-section {
+	max-width: 1597px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.dark-items {
+	margin-left: -5px;
+	margin-right: -5px;
+	font-size: 0;
+}
+.dark-item {
+	width: 33.333%;
+	display: inline-block;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: top;
+	background-color: #0f0f0f;
+}
+.dark-content {
+	font-size: 18px;
+	text-align: center;
+	padding: 50px;
+}
+.dark-img {
+	vertical-align: middle;
+	margin: 16px;
+}
+.dark-smartphone {
+	vertical-align: middle;
+	display: inline-block;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 150%;
+}
+.smartphone-description {
+	color: #999;
+	font-size: 18px;
+	line-height: 150%;
+	text-align: center;
+}
+.tablet-icon {
+	vertical-align: middle;
+	margin: 16px;
+}
+.dark-tablet {
+	vertical-align: middle;
+	display: inline-block;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 150%;
+}
+.tablet-description {
+	color: #999;
+	font-size: 18px;
+	line-height: 150%;
+	text-align: left;
+}
+.tv-icon {
+	vertical-align: middle;
+	margin: 16px;
+}
+.dark-tv {
+	vertical-align: middle;
+	display: inline-block;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 150%;
+}
+.tv-description {
+	color: #999;
+	font-size: 18px;
+	line-height: 150%;
+	text-align: left;
+}
+.laptop-icon {
+	vertical-align: middle;
+	margin: 16px;
+}
+.dark-laptop {
+	vertical-align: middle;
+	display: inline-block;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 150%;
+}
+.laptops-description {
+	color: #999;
+	font-size: 18px;
+	line-height: 150%;
+	text-align: left;
+}
+.console-icon {
+	vertical-align: middle;
+	margin: 16px;
+}
+.dark-console {
+	vertical-align: middle;
+	display: inline-block;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 150%;
+}
+.console-description {
+	color: #999;
+	font-size: 18px;
+	line-height: 150%;
+	text-align: left;
+}
+.vr-icon {
+	vertical-align: middle;
+	margin: 16px;
+}
+.dark-vr {
+	vertical-align: middle;
+	display: inline-block;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 150%;
+}
+.vr-description {
+	color: #999;
+	font-size: 18px;
+	line-height: 150%;
+	text-align: left;
+}
