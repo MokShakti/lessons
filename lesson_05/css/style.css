@@ -1,0 +1,190 @@
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500");
+
+/* null */
+
+@import url("reset.css");
+
+/*--------------------*/
+body {
+	overflow-x: hidden;
+}
+.header-menu {
+	max-width: 38.75rem;
+	margin-inline: auto;
+	font-family: "Manrope", sans-serif;
+	margin-bottom: 1.875rem;
+}
+.list-menu {
+	text-align: center;
+}
+.list {
+	display: inline-block;
+	font-size: 1.25rem;
+	padding-inline-start: 1.25rem;
+}
+.main-container {
+	font-family: "Manrope", sans-serif;
+	margin: 0 0.625rem;
+}
+.main-container p {
+	line-height: 1.5;
+	padding-bottom: 1.25rem;
+	text-align: center;
+}
+.main-container img {
+	margin: 1.25rem 6.25rem;
+}
+#gods {
+	font-family: "Manrope", sans-serif;
+	font-size: 1.75rem;
+	text-align: center;
+	margin-bottom: 1.25rem;
+}
+#cosmology {
+	font-family: "Manrope", sans-serif;
+	font-size: 1.75rem;
+	text-align: center;
+	margin: 1.25rem 0;
+}
+
+footer a {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.25rem;
+}
+
+/* Homework */
+
+.main-dark {
+	max-width: 120rem;
+	background-color: #141414;
+	font-family: "Manrope", sans-serif;
+	overflow: hidden;
+}
+.header-title {
+	margin-bottom: 5rem;
+}
+.streaming {
+	color: #ffffff;
+	font-size: 2.375rem;
+	font-weight: 700;
+	line-height: 1.5;
+	margin-bottom: 0.875rem;
+}
+h1 {
+	padding-left: 0.9375rem;
+	margin-bottom: 0.875rem;
+}
+.stream {
+	color: #999;
+	font-size: 1.125rem;
+	line-height: 1.5;
+	padding-left: 0.9375rem;
+	margin-bottom: 5rem;
+}
+.dark-section {
+	max-width: 99.8125rem;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.dark-items {
+	margin: 0 -0.9375rem;
+	font-size: 0;
+}
+.dark-item {
+	width: 33.333%;
+	display: inline-block;
+	margin-bottom: 1.875rem;
+	padding: 0 0.9375rem;
+	vertical-align: top;
+}
+.dark-content {
+	min-height: 11.4375rem;
+	min-width: 25.75rem;
+	font-size: 1.125rem;
+	padding: 3.125rem;
+	margin: 0 0.9375rem;
+	border: 0.0625rem solid #262626;
+	background-color: #0f0f0f;
+}
+.dark-style {
+	margin-bottom: 0.9375rem;
+}
+.dark-content p {
+	color: #999;
+	font-size: 1.125rem;
+	line-height: 150%;
+}
+.dark-content img {
+	vertical-align: middle;
+	margin-right: 1rem;
+}
+.dark-content h2 {
+	vertical-align: middle;
+	display: inline-block;
+	color: #fff;
+	font-size: 24px;
+	line-height: 150%;
+}
+
+/* Second Homework */
+.main-landing {
+	max-width: 1440px;
+	min-height: 56.8125rem;
+	padding: 100px 0;
+	font-family: "Roboto", sans-serif;
+	background-color: #fbfbfd;
+}
+.landing-list {
+}
+.title-content {
+	max-width: 520px;
+	margin: 0 auto;
+}
+.p-content p {
+	font-size: 16px;
+	line-height: 162.5%;
+	margin-bottom: 70px;
+	color: #6f7cb2;
+}
+.landing-title h3 {
+	color: #091133;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 133.333%;
+	margin-bottom: 16px;
+}
+.lading-section {
+	max-width: 48.9375rem;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.landing-items {
+	margin: 0 -0.9375rem;
+	font-size: 0;
+}
+.landing-item {
+	width: 50%;
+	display: inline-block;
+	margin-bottom: 1.875rem;
+	padding: 0 0.9375rem;
+	vertical-align: top;
+	color: #5d6970;
+	font-size: 12px;
+	line-height: 150%;
+}
+.landing-content {
+	min-height: 138px;
+	min-width: 245px;
+	font-size: 1.125rem;
+	padding: 3.125rem;
+	margin: 0 0.9375rem;
+}
+.landing-style {
+	margin-bottom: 0.9375rem;
+}
+.landing-style img {
+	margin-bottom: 14px;
+}
