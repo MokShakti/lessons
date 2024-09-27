@@ -1,0 +1,124 @@
+/* google fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:regular);
+@import url(https://fonts.googleapis.com/css?family=Manrope:regular,500,600);
+@import url(https://fonts.googleapis.com/css?family=Epilogue:regular,700,800);
+/* null */
+
+@import url("reset.css");
+
+/*--------------------*/
+body {
+	overflow-x: hidden;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.header-container {
+	background-color: #141414;
+}
+.photo-block {
+	min-height: 859px;
+	background:
+		url("../img/play.png") center / 470px no-repeat,
+		linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, #141414 100%),
+		linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0) 100%),
+		url("../img/subcontainer.png") center / cover no-repeat;
+}
+.main-main {
+	background-color: #141414;
+	min-height: 296px;
+}
+.main-container {
+	padding-inline: 15px;
+	font-family: "Manrope", sans-serif;
+}
+h1 {
+	color: #ffffff;
+	text-align: center;
+	font-size: 58px;
+	font-weight: 700;
+	line-height: 150%;
+}
+.main-items p {
+	color: #999999;
+	text-align: center;
+	font-size: 18px;
+	line-height: 150%;
+}
+.main-item {
+	margin-bottom: 14px;
+}
+.main-items {
+	max-width: 1096px;
+	margin-inline: auto;
+	margin-bottom: 50px;
+}
+.button-container {
+	text-align: center;
+}
+.button {
+	background: #e50000 url("../img/startbutton.png") 24px / 28px no-repeat;
+	padding: 18px 24px;
+	color: #ffffff;
+	border-radius: 8px;
+	text-transform: capitalize;
+}
+.button span {
+	padding-left: 28px;
+}
+.main-portfolio {
+	background-color: #fdf0e9;
+	font-family: "Epilogue", sans-serif;
+	padding-block: 77px;
+}
+.portfolio-container {
+	max-width: 1175px;
+	padding-inline: 15px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.portfolio-content {
+	max-width: 470px;
+	display: inline-block;
+	margin-right: 85px;
+}
+.portfolio-item {
+	margin-bottom: 20px;
+}
+.list__item {
+	background: url("../img/check.png") left center / 32px no-repeat;
+	margin-bottom: 16px;
+	padding-top: 8px;
+	padding-left: 48px;
+	min-height: 35px;
+	font-size: 16px;
+}
+h2 {
+	color: #ef6d58;
+	font-size: 16px;
+	line-height: 200%;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+h3 {
+	max-width: 397px;
+	color: #391400;
+	font-size: 56px;
+	font-weight: 800;
+	line-height: 114.286%;
+	letter-spacing: -1px;
+	margin-bottom: 26px;
+}
+.portfolio-items p {
+	color: #391400;
+	font-size: 20px;
+	line-height: 160%;
+	margin-bottom: 26px;
+}
+.footer-container {
+	min-width: 1175px;
+	background-color: #fdf0e9;
+	text-align: center;
+}
