@@ -1,8 +1,0 @@
-/* local fonts */
-@font-face {
-	font-family: "Crimes of Grindelwald";
-	src: url("CrimesofGrindelwald.woff2") format("woff2");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
