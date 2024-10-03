@@ -30,17 +30,24 @@ body {
 	font-weight: 700;
 }
 .main-first {
+	max-width: 1440px;
+	margin: 0 auto;
 	padding-inline: 15px;
 	font-family: Epilogue;
+}
+.main-container {
+	max-width: 970px;
+	margin: 0 auto;
 }
 .first-container {
 	max-width: 570px;
 	margin: 0 auto;
 }
 .img-container {
-	max-width: 970px;
-	margin: 0 auto;
 	margin-bottom: 74px;
+}
+.bitmap {
+	max-width: 100%;
 }
 .main-first p {
 	color: rgba(57, 20, 0, 0.64);
