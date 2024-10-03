@@ -156,7 +156,7 @@ h2 {
 	padding-inline: 15px;
 	padding-top: 106px;
 	background-color: #ffffff;
-	font-family: "DM Sans";
+	font-family: "DM Sans", sans-serif;
 }
 .second-container {
 	max-width: 889px;
@@ -248,7 +248,7 @@ h2 {
 .main-third {
 	padding-inline: 15px;
 	background-color: #ffffff;
-	font-family: "DM Sans";
+	font-family: "DM Sans", sans-serif;
 }
 .third-container {
 	max-width: 1710px;
