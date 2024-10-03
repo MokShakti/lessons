@@ -33,7 +33,7 @@ body {
 	max-width: 1440px;
 	margin: 0 auto;
 	padding-inline: 15px;
-	font-family: Epilogue;
+	font-family: "Epilogue", sans-serif;
 }
 .main-container {
 	max-width: 970px;
