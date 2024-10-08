@@ -50,8 +50,10 @@ h2 {
 }
 .images-content img {
 	max-width: 100%;
-	padding-right: 50px;
 	vertical-align: middle;
+}
+.images-content img:not(:last-child) {
+	margin-right: 50px;
 }
 .elements-content h2 {
 	padding-bottom: 20px;
