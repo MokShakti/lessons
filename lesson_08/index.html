@@ -19,13 +19,13 @@
 			<div class="main-container">
 				<div class="main-content">
 					<h2>Content picture, raster image, .jpg - .webp</h2>
-					<picture>
+					<picture class="bitmap">
 						<!-- Presented some alternative ways to add different picture formats -->
 						<source media="(min-width: 480px)" srcset="img/webp/bitmap1x.webp 1x, img/webp/bitmap2x.webp 2x, img/webp/bitmap3x.webp 3x, img/webp/bitmap4x.webp 4x" type="image/webp">
 						<source media="(max-width: 479px)" srcset="img/jpg/bitmap1x.jpg 1x, img/jpg/bitmap2x.jpg 2x, img/jpg/bitmap3x.jpg 3x, img/jpg/bitmap4x.jpg 4x" type="image/jpeg">
 						<!-- for bloody Safari -->
 						<source srcset="img/webp/bitmap1x.webp 1x, img/webp/bitmap2x.webp 2x, img/webp/bitmap3x.webp 3x, img/webp/bitmap4x.webp 4x">
-						<img src="img/webp/bitmap4x.webp" width="100%" alt="Man is looking at his BMW in car service">
+						<img src="img/webp/bitmap4x.webp" alt="Man is looking at his BMW in car service">
 					</picture>
 				</div>
 				<div class="preview-content">
