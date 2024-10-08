@@ -1,0 +1,122 @@
+/* google fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Domine:regular,500,600,700);
+
+/* null */
+
+@import url("reset.css");
+
+/*--------------------*/
+body {
+	background-color: #fdf0e9;
+	font-family: "Domine", sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.header-title {
+	background-color: #28293e;
+	padding: 20px;
+}
+h1 {
+	font-weight: 600;
+	font-size: 25px;
+	text-align: center;
+	color: #ffffff;
+}
+.main-container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-inline: 15px;
+}
+h2 {
+	color: #391400;
+	font-size: 56px;
+	font-weight: 800;
+	line-height: 114.286%;
+}
+.bitmap {
+	max-width: 100%;
+}
+.preview-content {
+	max-width: 100%;
+}
+.logo-content {
+	padding: 20px 20px;
+}
+.logo-content h2 {
+	padding-bottom: 20px;
+}
+.images-content img {
+	max-width: 100%;
+	padding-right: 50px;
+	vertical-align: middle;
+}
+.elements-content h2 {
+	padding-bottom: 20px;
+}
+.icons {
+	padding-bottom: 30px;
+}
+.icons h2 {
+	padding-bottom: 30px;
+}
+.icons-content {
+	background-color: #28293e;
+	border-radius: 15px;
+	padding: 20px;
+}
+.icons-play {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+}
+.icons-star {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+}
+.big-circle {
+	display: inline-block;
+	vertical-align: middle;
+	width: 112px;
+	height: 112px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 112px;
+	background-color: #ef6c57;
+}
+.big-circle img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+.small-circle {
+	display: inline-block;
+	vertical-align: middle;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 48px;
+	background-color: #ef6c57;
+}
+.small-circle img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+.footer-content {
+	background-color: #28293e;
+	max-height: 100px;
+	text-align: center;
+}
+.footer-content p {
+	text-align: center;
+	color: #ffffff;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 20px;
+	line-height: 103.448%;
+	padding: 20px;
+}

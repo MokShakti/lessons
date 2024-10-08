@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 08</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="header-title">
+				<h1>Homework 08</h1>
+			</div>
+		</header>
+		<main>
+			<div class="main-container">
+				<div class="main-content">
+					<h2>Content picture, raster image, .jpg - .webp</h2>
+					<picture>
+						<!-- Presented some alternative ways to add different picture formats -->
+						<source media="(min-width: 480px)" srcset="img/webp/bitmap1x.webp 1x, img/webp/bitmap2x.webp 2x, img/webp/bitmap3x.webp 3x, img/webp/bitmap4x.webp 4x" type="image/webp">
+						<source media="(max-width: 479px)" srcset="img/jpg/bitmap1x.jpg 1x, img/jpg/bitmap2x.jpg 2x, img/jpg/bitmap3x.jpg 3x, img/jpg/bitmap4x.jpg 4x" type="image/jpeg">
+						<!-- for bloody Safari -->
+						<source srcset="img/webp/bitmap1x.webp 1x, img/webp/bitmap2x.webp 2x, img/webp/bitmap3x.webp 3x, img/webp/bitmap4x.webp 4x">
+						<img src="img/webp/bitmap4x.webp" width="100%" alt="Man is looking at his BMW in car service">
+					</picture>
+				</div>
+				<div class="preview-content">
+					<h2>Video preview, raster image, .jpg - .webp</h2>
+					<!-- trial of adding an alternative picture for the width less than a 767.98px -->
+					<picture class="preview-class">
+						<source media="(min-width: 480px)" srcset="img/webp/preview1x.webp, img/webp/preview2x.webp, img/webp/preview3x.webp, img/webp/preview4x.webp" type="image/webp">
+						<source media="(max-width: 479px)" srcset="img/jpg/preview1x.jpg, img/jpg/preview2x.jpg, img/jpg/preview3x.jpg, img/jpg/preview4x.jpg" type="image/jpeg">
+						<img src="img/webp/preview1x.webp" alt="Sands looking like a great desert">
+					</picture>
+				</div>
+				<div class="logo-content">
+					<h2>Companies logo, content picture, raster image, .png - .webp</h2>
+					<div class="images-content">
+						<img src="img/webp/digitalside1x.webp" alt="DigitalSide Logo" class="digitalside">
+						<img src="img/webp/vortex1x.webp" alt="Vortex Logo" class="vortex">
+						<img src="img/webp/explorer1x.webp" alt="Explorer Logo" class="explorer">
+						<img src="img/webp/fuzion1x.webp" alt="Fuzion Logo" class="fuzion">
+						<img src="img/webp/mediafury1x.webp" alt="MediaFury Logo" class="fury">
+					</div>
+				</div>
+				<div class="card-content">
+					<h2>Content picture, vector, .svg</h2>
+					<img src="img/svg/card.svg" alt="Business card vector image">
+				</div>
+				<div class="elements-content">
+					<h2>Design Element's pictures, vector, .svg</h2>
+					<img src="img/svg/quotes.svg" alt="Quotes vector image">
+					<img src="img/svg/cloud.svg" alt="Cloud vector image">
+				</div>
+				<div class="icons">
+					<h2>Icons, vector images, .svg</h2>
+					<div class="icons-content">
+						<div class="icons-play">
+							<img src="img/svg/play.svg" alt="Play Icon">
+						</div>
+						<div class="icons-star">
+							<img src="img/svg/star.svg" alt="Star Icon">
+						</div>
+						<div class="big-circle">
+							<img src="img/svg/calendar.svg" alt="Calendar Vector Icon">
+						</div>
+						<div class="big-circle">
+							<img src="img/svg/case.svg" alt="Case Vector Icon">
+						</div>
+						<div class="small-circle">
+							<img src=" img/svg/facebook.svg" alt="Facebook icon">
+						</div>
+						<div class="small-circle">
+							<img src=" img/svg/instagram.svg" alt="Instagram Icon">
+						</div>
+						<div class="small-circle">
+							<img src="img/svg/twitter.svg" alt="Image">
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-content">
+				<p>display:none</p>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
