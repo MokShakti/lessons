@@ -1,0 +1,28 @@
+/* google fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:regular,700);
+
+/* null */
+
+@import url("reset.css");
+
+/*--------------------*/
+body {
+	background-color: #293133;
+	font-family: "Amatic SC", sans-serif;
+}
+.header {
+	margin-bottom: 20px;
+}
+.header__container {
+	border: 2px solid #000000;
+	border-radius: 5px;
+}
+.header__title {
+	font-size: 50px;
+	text-align: center;
+}
+.page {
+	font-size: 30px;
+	color: #3f888f;
+}
