@@ -1,6 +1,7 @@
 /* google fonts */
 
 @import url(https://fonts.googleapis.com/css?family=Xanh+Mono:regular,italic);
+@import url(https://fonts.googleapis.com/css?family=Epilogue:regular,800,900);
 
 /* null */
 
@@ -12,14 +13,14 @@
 	overflow: clip;
 }
 body {
-	font-family: "Xanh Mono", sans-serif;
 }
 
 .header-top {
 	padding: 10px;
 	background-color: #f9e5da;
 }
-.header-top__title p {
+.header-top__title h1 {
+	font-family: "Xanh Mono", sans-serif;
 	font-size: 30px;
 	text-align: center;
 	color: #28293e;
@@ -126,4 +127,84 @@ body {
 	left: 21px;
 	width: 100%;
 	border-radius: 40% 40% 6px 6px;
+}
+.page-cards {
+	background-color: #28293e;
+	font-family: "Epilogue", sans-serif;
+}
+.page-cards__container {
+}
+.container-content {
+}
+.container-content__top {
+	position: relative;
+	max-height: 100px;
+	max-width: 1173px;
+	margin: 0 auto;
+}
+.container-content__title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-bottom: 38px;
+}
+.container-content__title p {
+	color: #ef6d58;
+	line-height: 200%;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.container-content__sub-title {
+	position: absolute;
+	top: 59px;
+	left: 0;
+	color: #ffffff;
+	font-size: 56px;
+	font-weight: 800;
+	line-height: 114.286%;
+	letter-spacing: -1px;
+	text-transform: capitalize;
+}
+.container-content__button {
+	position: absolute;
+	top: 52px;
+	right: 0;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	padding: 18px 30px;
+	border-radius: 6px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.container-content__bottom {
+	max-height: 608px;
+	max-width: 1442px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.container-content__overlay {
+	font-size: 0;
+	margin: 0 -15px;
+	border: 1px solid #3a3c56;
+}
+.container-content__cards {
+	width: 33.333%;
+	display: inline-block;
+	padding: 15px;
+	vertical-align: top;
+}
+.container-content__buttons {
+}
+.container-content__label {
+}
+.container-content__cards--sofa {
+	/* font-size: 18px;
+	padding: 50px;
+	border: 1px solid #262626; */
+}
+.container-content__cards--keyboard {
+}
+.container-content__cards--media {
 }
