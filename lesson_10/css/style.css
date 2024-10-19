@@ -176,7 +176,7 @@ body {
 	vertical-align: top;
 }
 .container-content__bottom {
-	max-height: 608px;
+	/* max-height: 608px; */
 	max-width: 1442px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -186,16 +186,16 @@ body {
 	margin: 0 -15px;
 	border: 1px solid #3a3c56;
 }
-.container-content__cards {
+.container-content__items {
+	display: inline-block;
+}
+.container-content__item {
 	width: 33.333%;
 	padding: 15px;
 	vertical-align: top;
 	border-inline-end: 1px solid #3a3c56;
 	border-block-end: 1px solid #3a3c56;
-}
-.container-content__items {
-}
-.container-content__item {
+	font-size: 18px;
 }
 .container-content__content {
 }
