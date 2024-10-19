@@ -162,6 +162,11 @@
 	text-transform: uppercase;
 	vertical-align: top;
 }
+.container-content__button:hover {
+	text-decoration: underline;
+	background-color: #b550f8;
+	color: #ffffff;
+}
 .container-content__bottom {
 	max-width: 1442px;
 	margin: 0 auto;
@@ -208,6 +213,11 @@
 	color: #391400;
 	font-size: 16px;
 	line-height: 200%;
+}
+.container-content__buttons:hover {
+	text-decoration: underline;
+	background-color: #391400;
+	color: #ffffff;
 }
 .container-content__label {
 	color: #ffffff;
