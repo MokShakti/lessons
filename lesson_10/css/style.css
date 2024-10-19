@@ -12,9 +12,6 @@
 	min-height: 100%;
 	overflow: clip;
 }
-body {
-}
-
 .header-top {
 	padding: 10px;
 	background-color: #f9e5da;
@@ -25,20 +22,14 @@ body {
 	text-align: center;
 	color: #28293e;
 }
-.page {
-}
 .page-pictures {
 	background-color: #28293e;
-}
-.page-pictures__img {
 }
 .img-project {
 	position: relative;
 	max-width: 570px;
 	max-height: 586px;
 	margin: 0 auto;
-}
-.img-project__picture {
 }
 .img-project__picture--big-oval::before {
 	content: "";
@@ -132,10 +123,6 @@ body {
 	background-color: #28293e;
 	font-family: "Epilogue", sans-serif;
 }
-.page-cards__container {
-}
-.container-content {
-}
 .container-content__top {
 	position: relative;
 	max-width: 1173px;
@@ -176,32 +163,76 @@ body {
 	vertical-align: top;
 }
 .container-content__bottom {
-	/* max-height: 608px; */
 	max-width: 1442px;
 	margin: 0 auto;
 	overflow: hidden;
+	padding: 15px;
 }
-.container-content__overlay {
+.container-content__items {
 	font-size: 0;
 	margin: 0 -15px;
 	border: 1px solid #3a3c56;
 }
-.container-content__items {
-	display: inline-block;
-}
 .container-content__item {
 	width: 33.333%;
+	display: inline-block;
 	padding: 15px;
 	vertical-align: top;
 	border-inline-end: 1px solid #3a3c56;
 	border-block-end: 1px solid #3a3c56;
-	font-size: 18px;
 }
 .container-content__content {
+	position: relative;
+}
+.container-content__content img {
+	width: 100%;
 }
 .container-content__text {
+	position: absolute;
+	bottom: 10.691823%;
+	left: 10.572687%;
+	right: 10.572687%;
+}
+.container-content__text > * {
+	margin-block-end: 24px;
+}
+.container-content__text > *:last-child {
+	margin-block-end: 0px;
 }
 .container-content__buttons {
+	display: inline-block;
+	padding: 5px 16px;
+	border-radius: 19px;
+	background-color: #ffffff;
+	text-align: center;
+	color: #391400;
+	font-size: 16px;
+	line-height: 200%;
 }
 .container-content__label {
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: 800;
+	line-height: 120%;
+}
+.container-content__label--uppercase {
+	text-transform: uppercase;
+}
+.container-content__label--capitalize {
+	text-transform: capitalize;
+}
+.footer-content {
+	background-color: #28293e;
+	max-height: 100px;
+	text-align: center;
+}
+.footer-content p {
+	text-align: center;
+	color: #ffffff;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 20px;
+	line-height: 103.448%;
+	padding: 20px;
 }
