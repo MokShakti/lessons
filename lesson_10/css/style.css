@@ -188,19 +188,20 @@ body {
 }
 .container-content__cards {
 	width: 33.333%;
-	display: inline-block;
 	padding: 15px;
 	vertical-align: top;
 	border-inline-end: 1px solid #3a3c56;
 	border-block-end: 1px solid #3a3c56;
 }
+.container-content__items {
+}
+.container-content__item {
+}
+.container-content__content {
+}
+.container-content__text {
+}
 .container-content__buttons {
 }
 .container-content__label {
-}
-.container-content__cards--sofa {
-}
-.container-content__cards--keyboard {
-}
-.container-content__cards--media {
 }
