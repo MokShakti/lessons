@@ -22,16 +22,10 @@
 	text-align: center;
 	color: #28293e;
 }
-.page-pictures {
+.page-images {
 	background-color: #28293e;
 }
-.img-project {
-	position: relative;
-	max-width: 570px;
-	max-height: 586px;
-	margin: 0 auto;
-}
-.img-project__picture--big-oval::before {
+.page-images__img::before {
 	content: "";
 	position: absolute;
 	top: 96px;
@@ -41,18 +35,20 @@
 	border-radius: 50%;
 	background-color: #32334c;
 }
-.img-project__picture--stars::before {
-	content: "";
-	background: url("../img/starsinoval.svg") center / contain no-repeat;
+.img-project {
+	position: relative;
+	max-width: 570px;
+	max-height: 586px;
+	margin: 0 auto;
+}
+.img-project__picture--stars img {
 	position: absolute;
 	top: 40px;
 	left: 301px;
 	width: 112px;
 	height: 112px;
 }
-.img-project__picture--cloud::before {
-	content: "";
-	background: url("../img/cloud.svg") center / contain no-repeat;
+.img-project__picture--cloud img {
 	position: absolute;
 	top: 80px;
 	left: 459px;
@@ -119,7 +115,7 @@
 	width: 100%;
 	border-radius: 40% 40% 6px 6px;
 }
-.page-cards {
+.main-cards {
 	background-color: #28293e;
 	font-family: "Epilogue", sans-serif;
 }
