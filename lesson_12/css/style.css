@@ -1,0 +1,215 @@
+/* google fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:regular,700);
+
+/* null */
+
+@import url("reset.css");
+
+/*--------------------*/
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+.header-top {
+	padding: 10px;
+	background-color: #000000;
+}
+.header-top__title h1 {
+	font-size: 30px;
+	text-align: center;
+	color: #ffffff;
+}
+.page {
+	position: relative;
+	height: 100vh;
+}
+.page__background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+}
+.background {
+	width: 666666px;
+}
+.background__image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #00ff00 url("../img/webp/forbiddenforest.webp") 0 0 / contain repeat-x;
+	animation: invbg 600s linear;
+	animation-iteration-count: infinite;
+}
+@keyframes invbg {
+	0% {
+		transform: translate(-50%, 0px);
+	}
+	100% {
+		transform: translate(50%, 0px);
+	}
+}
+.invisible-road {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	transform: translate(-100%, 0px);
+	animation: invroad 10s linear 1s;
+	animation-iteration-count: infinite;
+}
+@keyframes invroad {
+	0% {
+		transform: translate(100%, 0px);
+	}
+	100% {
+		transform: translate(0%, 0px);
+	}
+}
+.page__ford {
+	position: absolute;
+	bottom: 80%;
+	left: 20%;
+	/* animation:
+		startmove 5s ease forwards 0s,
+		endmove 5s ease forwards 25s; */
+}
+.ford-body {
+	/* position: relative;
+	bottom: 80%;
+	left: 20%;
+	width: 300px;
+	height: 200px; */
+	/* max-width: 500px;
+	margin: 0px auto; */
+}
+/* @keyframes startmove {
+	0% {
+		transform: translate(100%, 0px);
+	}
+	100% {
+		transform: translate(-100%, 0px);
+	}
+} */
+.ford-body__roof {
+	position: absolute;
+	top: 85px;
+	left: 315px;
+	height: 20px;
+	width: 250px;
+	margin: 0 auto;
+	border-radius: 49% 51% 51% 49% / 100% 100% 0% 0%;
+	border: 10px solid #ffffff;
+	transform: rotateX(30deg);
+}
+.ford-body__bottom {
+	z-index: 2;
+	position: absolute;
+	height: 150px;
+	width: 600px;
+	margin: 0 auto;
+	border-radius: 21% 10% 6% 5% / 16% 24% 19% 15%;
+	background-color: #405688;
+	border-top: 10px solid #ffffff;
+	top: 200px;
+	left: 150px;
+}
+.ford-body__headlight {
+	position: absolute;
+	height: 42px;
+	width: 10px;
+	margin: 0 auto;
+	border-radius: 71% 0% 0% 56% / 100% 16% 0% 100%;
+	background-color: #d8c6d2;
+	top: 240px;
+	left: 140px;
+}
+.ford-body__frontw--wheel {
+	z-index: 4;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	border-radius: 51% 49% 51% 49% / 49% 48% 52% 51%;
+	background-color: #35383d;
+	border: 20px solid #191c21;
+	top: 290px;
+	left: 220px;
+}
+.ford-back--wheel {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	border-radius: 51% 49% 51% 49% / 49% 48% 52% 51%;
+	background-color: #35383d;
+	border: 20px solid #191c21;
+	top: 290px;
+	left: 550px;
+	z-index: 4;
+}
+.ford-body__elements {
+	position: absolute;
+	top: 260px;
+	left: 550px;
+	height: 20px;
+	width: 20px;
+	background-color: #191c21;
+}
+.ford-body__frontm--door-window {
+	position: absolute;
+	height: 100px;
+	width: 160px;
+	margin: 0 auto;
+	border-radius: 36% 0% 0% 0% / 95% 8% 10% 7%;
+	background-color: #191d1c;
+	top: 100px;
+	left: 270px;
+	transition: all 3s;
+}
+.car:hover .ford-body__frontm {
+	visibility: hidden;
+	transition: all 3s;
+	transform: translateY(150px);
+}
+.ford-body__window--frame {
+	position: absolute;
+	height: 100px;
+	width: 160px;
+	margin: 0 auto;
+	border-radius: 36% 0% 0% 0% / 95% 8% 10% 7%;
+	border: 10px solid #405688;
+	top: 100px;
+	left: 270px;
+}
+.ford-body__back--window {
+	position: absolute;
+	height: 100px;
+	width: 160px;
+	margin: 0 auto;
+	border-radius: 15% 20% 0% 0% / 0% 47% 16% 0%;
+	border: 10px solid #405688;
+	background-color: #191d1c;
+	top: 100px;
+	left: 430px;
+}
+.ford-body__opened--trunk {
+	position: absolute;
+	height: 20px;
+	width: 170px;
+	margin: 0 auto;
+	border-radius: 49% 51% 51% 49% / 100% 100% 0% 0%;
+	border: 10px solid #405688;
+	transform-origin: 0 0;
+	top: 180px;
+	left: 580px;
+	transition: all 0.5s;
+}
+.car:hover .ford-body__opened {
+	visibility: visible;
+	transform: rotate(-30deg);
+	transition: all 0.5s;
+}
