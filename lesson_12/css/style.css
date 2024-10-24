@@ -76,6 +76,42 @@
 	/* animation:
 		startmove 5s ease forwards 0s,
 		endmove 5s ease forwards 25s; */
+	animation: startmove 5s ease forwards 0s;
+}
+@keyframes startmove {
+	0% {
+		top: 300px;
+	}
+	/* 10% {
+		bottom: 150px;
+	}
+	20% {
+		top: 150px;
+	}
+	30% {
+		bottom: 150px;
+	}
+	40% {
+		top: 150px;
+	} */
+	50% {
+		bottom: 150px;
+	}
+	/* 60% {
+		top: 150px;
+	}
+	70% {
+		bottom: 150px;
+	}
+	80% {
+		top: 150px;
+	}
+	90% {
+		bottom: 150px;
+	} */
+	100% {
+		top: 300px;
+	}
 }
 .ford-body {
 	/* position: relative;
@@ -83,17 +119,9 @@
 	left: 20%;
 	width: 300px;
 	height: 200px; */
-	/* max-width: 500px;
-	margin: 0px auto; */
+	max-width: 500px;
+	margin: 0px auto;
 }
-/* @keyframes startmove {
-	0% {
-		transform: translate(100%, 0px);
-	}
-	100% {
-		transform: translate(-100%, 0px);
-	}
-} */
 .ford-body__roof {
 	position: absolute;
 	top: 85px;
