@@ -30,18 +30,16 @@ body {
 	color: #ffffff;
 }
 .lesson-2d__body {
-	background-color: #490005;
 	font-size: 0;
 }
 .lesson-2d__items {
-	font-size: 0;
 }
 .lesson-2d__item {
 	font-size: 25px;
-	/* display: inline-block; */
 	text-align: center;
-	/* min-width: 325px;
-	min-height: 325px; */
+	display: inline-block;
+	width: 325px;
+	height: 325px;
 	border: 1px solid #000000;
 }
 .lesson-2d__content {
@@ -55,42 +53,27 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	/* top: 160px;
-	right: 120px; */
-	display: inline-block;
 	text-align: center;
 }
-.lesson-2d__content--translate-y {
-}
-.lesson-2d__content--translate-y p {
-}
-.lesson-2d__content--translate-x {
-}
-.lesson-2d__content--translate {
-}
-.lesson-2d__content--scale-y {
-}
-.lesson-2d__content--scale-x {
-}
-.lesson-2d__content--scale {
-}
-.lesson-2d__content--rotate-y {
-}
-.lesson-2d__content--rotate-x {
-}
-.lesson-2d__content--rotate {
-}
-.lesson-2d__content--skew-y {
-}
-.lesson-2d__content--skew-x {
-}
-.lesson-2d__content--skew {
-}
-.lesson-2d__content--origin-rotate {
-}
-.lesson-2d__content--origin-translate {
-}
-.lesson-2d__content--origin-scale {
-}
+.lesson-2d__content--translate-y,
+.lesson-2d__content--translate-x,
+.lesson-2d__content--translate,
+.lesson-2d__content--scale-y,
+.lesson-2d__content--scale-x,
+.lesson-2d__content--scale,
+.lesson-2d__content--rotate-y,
+.lesson-2d__content--rotate-x,
+.lesson-2d__content--rotate,
+.lesson-2d__content--skew-y,
+.lesson-2d__content--skew-x,
+.lesson-2d__content--skew,
+.lesson-2d__content--origin-rotate,
+.lesson-2d__content--origin-translate,
+.lesson-2d__content--origin-scale,
 .lesson-2d__content--origin-skew {
+	background-color: #490005;
+}
+.lesson-2d__item:first-child:hover .lesson-2d__content {
+	transform: translatey(-50px);
+	transition: all 0.5s;
 }
