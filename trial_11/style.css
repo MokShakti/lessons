@@ -1,0 +1,79 @@
+/* google fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:regular,700);
+
+/* null */
+
+@import url("reset.css");
+
+/*--------------------*/
+body {
+	background-color: #eae6ca;
+	padding-inline: 15px;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+.page {
+}
+.page__container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.page__lesson-2d {
+}
+.lesson-2d {
+	margin-block-start: 50px;
+}
+.lesson-2d p {
+	color: #ffffff;
+}
+.lesson-2d__body {
+	font-size: 0;
+}
+.lesson-2d__items {
+}
+.lesson-2d__item {
+	font-size: 25px;
+	text-align: center;
+	display: inline-block;
+	width: 325px;
+	height: 325px;
+	border: 1px solid #000000;
+}
+.lesson-2d__content {
+	position: relative;
+	transition: all 0.5s;
+	width: 100%;
+	height: 100%;
+}
+.lesson-2d__content p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.lesson-2d__content--translate-y,
+.lesson-2d__content--translate-x,
+.lesson-2d__content--translate,
+.lesson-2d__content--scale-y,
+.lesson-2d__content--scale-x,
+.lesson-2d__content--scale,
+.lesson-2d__content--rotate-y,
+.lesson-2d__content--rotate-x,
+.lesson-2d__content--rotate,
+.lesson-2d__content--skew-y,
+.lesson-2d__content--skew-x,
+.lesson-2d__content--skew,
+.lesson-2d__content--origin-rotate,
+.lesson-2d__content--origin-translate,
+.lesson-2d__content--origin-scale,
+.lesson-2d__content--origin-skew {
+	background-color: #490005;
+}
+.lesson-2d__item:first-child:hover .lesson-2d__content {
+	transform: translatey(-50px);
+	transition: all 0.5s;
+}
