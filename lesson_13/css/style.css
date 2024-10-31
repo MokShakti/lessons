@@ -1,0 +1,73 @@
+/* google fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Epilogue:regular,700,800);
+
+/* null */
+
+@import url("reset.css");
+
+/*--------------------*/
+body {
+	font-family: "Epilogue", sans-serif;
+	background-color: #28293e;
+}
+.header-container {
+	background-color: #fdf0e9;
+	padding: 15px;
+	margin-block-end: 91px;
+}
+.header-container__title {
+	text-align: center;
+	font-weight: 700;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+.page {
+	max-width: 1170;
+	padding-inline: 15px;
+}
+.portfolio {
+	/* margin: 0 auto; */
+}
+.portfolio__container {
+}
+.portfolio__top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.portfolio__title {
+	padding-block-end: 20px;
+}
+h1 {
+	color: #ef6d58;
+	font-size: 16px;
+	line-height: 200%;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.portfolio__subtitle {
+	padding-block-end: 36px;
+}
+.portfolio__top h2 {
+	color: #ffffff;
+	font-size: 56px;
+	font-weight: 800;
+	line-height: 114.286%;
+	letter-spacing: -1px;
+}
+.portfolio__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 574px;
+}
+.portfolio__item {
+}
