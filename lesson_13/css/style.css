@@ -1,0 +1,137 @@
+/* google fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Epilogue:regular,700,800);
+
+/* null */
+
+@import url("reset.css");
+
+/*--------------------*/
+body {
+	font-family: "Epilogue", sans-serif;
+	background-color: #28293e;
+}
+.header-container {
+	background-color: #fdf0e9;
+	padding: 15px;
+	margin-block-end: 91px;
+}
+.header-container__title {
+	text-align: center;
+	font-weight: 700;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+.page {
+	max-width: 1170;
+	padding-inline: 15px;
+}
+.portfolio {
+}
+.portfolio__container {
+}
+.portfolio__top {
+	/* display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap; */
+	text-align: center;
+	margin-block-end: 68px;
+}
+.portfolio__title {
+	margin-block-end: 20px;
+}
+h1 {
+	color: #ef6d58;
+	font-size: 16px;
+	line-height: 200%;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+.portfolio__subtitle {
+	margin-block-end: 36px;
+}
+.portfolio__top h2 {
+	color: #ffffff;
+	font-size: 56px;
+	font-weight: 800;
+	line-height: 114.286%;
+	letter-spacing: -1px;
+	text-transform: capitalize;
+}
+.portfolio__list {
+	display: flex;
+	gap: 60px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.portfolio__item {
+	text-align: center;
+	text-transform: capitalize;
+}
+.portfolio__column {
+}
+.column-images {
+}
+.column-images__content {
+}
+.content {
+}
+.content__items {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	gap: 30px 32px;
+}
+.content__item {
+	display: flex;
+	flex-direction: column;
+}
+.content__item img {
+	width: 100%;
+	border-radius: 6px;
+	/* opacity: 0.3181;
+	background: #5c2000; */
+}
+/* .content__item::before img {
+	content: "";
+	opacity: 0.3181;
+	background: #5c2000;
+} */
+.content__text {
+	transform: translate(48px, -160px);
+	align-items: center;
+}
+.content__text span {
+	background-color: #ffffff;
+	text-align: center;
+	line-height: 200%;
+	text-transform: capitalize;
+	color: #391400;
+}
+.content__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 38px;
+	border-radius: 19px;
+	flex-shrink: 0;
+	margin-block-end: 24px;
+}
+.content__label {
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: 800;
+	line-height: 120%;
+	flex-shrink: 0;
+	text-transform: capitalize;
+}
