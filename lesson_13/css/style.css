@@ -35,8 +35,9 @@ body {
 	flex-grow: 1;
 }
 .page {
-	max-width: 1170px;
+	max-width: 1200px;
 	padding-inline: 15px;
+	margin-inline: auto;
 }
 .portfolio__top {
 	text-align: center;
@@ -84,11 +85,9 @@ h1 {
 	display: flex;
 }
 .content__items {
-	max-width: 1170px;
 	display: flex;
 	gap: 30px;
 	flex-wrap: wrap;
-	margin-inline: auto;
 }
 .content__item:nth-child(1n + 1) {
 	flex-basis: 670px;
@@ -182,7 +181,7 @@ h1 {
 }
 .button-container:hover {
 	border-radius: 6px;
-	transform: scale(90%);
+	transform: scale(0.9);
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	transition: all 0.8s;
 	background: #ffffff;
@@ -202,8 +201,6 @@ h1 {
 	transition: all 0.5s;
 }
 .get-started {
-	max-width: 1170px;
-	margin-inline: auto;
 	margin-block-end: 140px;
 }
 .get-started__container {
@@ -260,7 +257,7 @@ h1 {
 }
 .button:hover::before {
 	opacity: 0;
-	transform: scale(0.5, 0.5);
+	transform: scale(0.5);
 }
 .button::after {
 	content: "";
@@ -274,11 +271,11 @@ h1 {
 	border-radius: 6px;
 	background-color: rgba(239, 109, 88, 0.5);
 	border: 1px solid rgba(239, 109, 88, 0.5);
-	transform: scale(1.2, 1.2);
+	transform: scale(1.2);
 }
 .button:hover::after {
 	opacity: 1;
-	transform: scale(1, 1);
+	transform: scale(1);
 }
 .button__text {
 	color: #ffffff;
@@ -425,8 +422,6 @@ h1 {
 }
 .events {
 	margin-block-end: 64px;
-	max-width: 1170px;
-	margin-inline: auto;
 }
 .events__top {
 	max-width: 426px;
@@ -524,12 +519,10 @@ h1 {
 	transition: all 0.5s;
 }
 .events__buttons:hover {
-	transform: scale(0.9, 0.9);
+	transform: scale(0.9);
 	transition: all 0.6s;
 }
 .team {
-	max-width: 1170px;
-	margin-inline: auto;
 	margin-block-end: 180px;
 }
 .team__top {
@@ -570,7 +563,7 @@ h1 {
 .arrows__left:hover::after {
 	content: "";
 	background-color: #ef6d58;
-	transform: scale(0.9, 0.9);
+	transform: scale(0.9);
 	border-radius: 50%;
 	transition: all 0.8s;
 }
@@ -585,7 +578,7 @@ h1 {
 .arrows__right:hover::after {
 	content: "";
 	background-color: #ef6d58;
-	transform: scale(0.9, 0.9);
+	transform: scale(0.9);
 	border-radius: 50%;
 	transition: all 0.8s;
 }
@@ -681,8 +674,6 @@ h1 {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 130px;
-	max-width: 1170px;
-	margin-inline: auto;
 	margin-block-end: 50px;
 }
 .founder__images {
