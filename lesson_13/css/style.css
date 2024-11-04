@@ -570,31 +570,43 @@ h1 {
 }
 .team__img-cards {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
 	justify-content: center;
 }
 .team__img-card {
+	margin-block-end: 25px;
+	flex: 1 1 270px;
+}
+.team__img {
+	display: flex;
 	width: 270px;
 	height: 272px;
-	margin-block-end: 25px;
-}
-.team-img {
-	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
 	border-radius: 6px;
 	border: 1px solid #3a3c56;
 	justify-content: center;
 	align-content: flex-end;
 }
-.team__img:first-child {
+.team__img:first-child img {
 	width: 196px;
 	height: 247px;
 }
-.team__img:nth-child(2) {
+.team__img--roelof img {
 	width: 259px;
 	height: 232px;
 }
+.team__img:nth-child(3) img {
+	width: 205px;
+	height: 238px;
+}
+.team__img:nth-child(4) img {
+	width: 230px;
+	height: 233px;
+}
 .team__img-card img {
-	width: 100%;
+	/* max-width: 100%; */
 }
 .team__name {
 }
