@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 14</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="header-container">
+				<div class="header-container__title">
+					<p>Homework 14</p>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<form enctype="multipart/form-data" action="#" class="page__black-form black">
+				<div class="black__first">
+					<div class="black__left">
+						<label class="black__name" for="first-name">First Name</label>
+						<input id="first-name" placeholder="Enter First Name" name="form[]" class="black__text" type="text">
+					</div>
+					<div class="black__right">
+						<label class="black__name" for="last-name">Last Name</label>
+						<input id="last-name" placeholder="Enter Last Name" name="form[]" class="black__text" type="text">
+					</div>
+				</div>
+				<div class="black__second">
+					<div class="black__left">
+						<label class="black__info" for="email">Email</label>
+						<input id="email" required name="form[]" placeholder="Enter your Email" class="black__text" type="email">
+					</div>
+					<div class="black__right">
+						<label class="black__info" for="tel">Phone Number</label>
+						<input id="tel" name="form[]" placeholder="Enter Phone Number" class="black__text" type="tel">
+					</div>
+				</div>
+				<div class="black__area area">
+					<label class="area__name" for="message">Message</label>
+					<div class="area__block">
+						<textarea id="message" placeholder="Enter your Message" class="area__textarea" name="form[]"></textarea>
+					</div>
+				</div>
+				<div class="black-form__policy policy">
+				</div>
+			</form>
+		</main>
+		<footer>
+			<div class="footer-content">
+				<p>display:none</p>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
