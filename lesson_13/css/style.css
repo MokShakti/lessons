@@ -106,7 +106,7 @@ h1 {
 	padding: 51px 48px;
 }
 .content__item img {
-	width: 100%;
+	max-width: 100%;
 	min-height: 416px;
 	object-fit: cover;
 	position: absolute;
@@ -417,8 +417,7 @@ h1 {
 	z-index: -1;
 }
 .right__firstlady img {
-	height: 100%;
-	width: 100%;
+	max-width: 100%;
 }
 .events {
 	margin-block-end: 64px;
@@ -604,20 +603,16 @@ h1 {
 	align-items: flex-end;
 }
 .team__img--azah img {
-	width: 196px;
-	height: 247px;
+	max-width: 196px;
 }
 .team__img--roelof img {
-	width: 259px;
-	height: 232px;
+	max-width: 259px;
 }
 .team__img--leonardo img {
-	width: 205px;
-	height: 238px;
+	max-width: 205px;
 }
 .team__img--izabella img {
-	width: 230px;
-	height: 233px;
+	max-width: 230px;
 }
 .team__name {
 	color: #ffffff;
