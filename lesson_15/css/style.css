@@ -12,9 +12,6 @@
 /* --------@keyframes---------- */
 
 /* ------------------------- */
-header {
-	margin-block-end: 91px;
-}
 .header-container {
 	background-color: #fdf0e9;
 	padding: 15px;
@@ -46,6 +43,7 @@ header {
 .portfolio {
 	background-color: #28293e;
 	font-family: "Epilogue", sans-serif;
+	padding-block-start: 90px;
 }
 .portfolio__top {
 	text-align: center;
