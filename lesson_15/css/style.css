@@ -753,9 +753,8 @@ h1 {
 }
 .dark-theme__container {
 	width: 100%;
-	max-width: 1513px;
+	max-width: 1630px;
 	overflow: hidden;
-	max-width: 1620px;
 }
 .movies {
 	display: flex;
@@ -766,6 +765,20 @@ h1 {
 	gap: 50px;
 	padding: 50px;
 	margin-block-end: 75px;
+}
+@media (max-width: 1600px) {
+	.movies__title h5 {
+		font-size: 30px;
+	}
+	.movies {
+		border-radius: 12px;
+		gap: 40px;
+		padding: 40px;
+		margin-block-end: 64px;
+	}
+	.movies__scroll {
+		gap: 12px;
+	}
 }
 .movies__title {
 	display: flex;
@@ -780,11 +793,6 @@ h1 {
 	font-weight: 700;
 	line-height: 150%;
 }
-@media (max-width: 1280px) {
-	.movies__title h5 {
-		font-size: 30px;
-	}
-}
 .movies__scroll {
 	display: flex;
 	/* flex-basis: 225px; */
@@ -793,14 +801,9 @@ h1 {
 	border-radius: 12px;
 	border: 1px solid #1f1f1f;
 	background: #0f0f0f;
-	flex-basis: 15.02%;
+	flex-basis: 14%;
 	padding: 16px;
 	cursor: pointer;
-}
-@media (max-width: 1280px) {
-	.movies__scroll {
-		gap: 12px;
-	}
 }
 .movies__left {
 	padding: 14px;
@@ -867,7 +870,7 @@ h1 {
 .card__item {
 	display: flex;
 	flex-direction: column;
-	flex: 0 1 23.9652%;
+	flex: 0 1 22%;
 	/* flex: 0 1 calc(100% / 4 - ((20px * 3) / 4)); */
 	aspect-ratio: 320/404;
 	row-gap: 20px;
@@ -876,9 +879,9 @@ h1 {
 	border: #262626;
 	background: #1a1a1a;
 }
-@media (min-width: 1200px) and (max-width: 1600px) {
+@media (max-width: 1600px) {
 	.card__item {
-		flex: 0 1 23.75%;
+		flex: 0 1 23%;
 		aspect-ratio: 253/324;
 		row-gap: 16px;
 		padding: 16px;
@@ -891,13 +894,12 @@ h1 {
 		gap: 2px;
 	}
 	.card__time {
-		border-radius: 51px;
 		gap: 0px;
 		font-size: 12px;
 	}
 	.card__time::before {
-		width: 20px;
-		height: 20px;
+		width: 16px;
+		height: 16px;
 	}
 	.card__stars img {
 		width: 14px;
@@ -928,10 +930,10 @@ h1 {
 }
 .card__time::before {
 	content: "";
-	background: url("../img/15/svg/time.svg") 0 0 / contain no-repeat;
+	background: url("../img/15/svg/time.svg") center / contain no-repeat;
 	object-fit: cover;
-	width: 24px;
-	height: 24px;
+	width: 20px;
+	height: 20px;
 }
 .card__stars {
 	display: flex;
