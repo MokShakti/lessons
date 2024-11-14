@@ -771,46 +771,6 @@ h1 {
 	gap: 50px;
 	margin-inline: auto;
 }
-@media (max-width: 1450px) {
-	.movies__title h5 {
-		font-size: 30px;
-	}
-	.movies {
-		border-radius: 12px;
-		gap: 40px;
-		padding: 40px;
-		margin-block-end: 64px;
-	}
-	.movies__scroll {
-		gap: 12px;
-		border-radius: 10px;
-		padding: 12px;
-	}
-	.movies__left {
-		padding: 14px;
-		border-radius: 6px;
-	}
-	.movies__left::before {
-		width: 15px;
-		height: 15px;
-	}
-	.scroller__01 {
-		width: 18px;
-		height: 4px;
-	}
-	.scroller__rest {
-		width: 14px;
-		height: 4px;
-	}
-	.movies__right {
-		padding: 4px;
-		border-radius: 6px;
-	}
-	.movies__right::after {
-		width: 15px;
-		height: 15px;
-	}
-}
 .movies__title {
 	display: flex;
 	flex-wrap: wrap;
@@ -842,6 +802,7 @@ h1 {
 	border-radius: 8px;
 	border: 1px solid #1f1f1f;
 	background: #1a1a1a;
+	transition: all 0.5s;
 }
 .movies__left::before {
 	content: "";
@@ -849,6 +810,10 @@ h1 {
 	padding: 6px;
 	width: 17px;
 	height: 17px;
+}
+.movies__left:hover {
+	background: #e50000;
+	transition: all 0.5s;
 }
 .scroller {
 	display: flex;
@@ -880,6 +845,7 @@ h1 {
 	border-radius: 8px;
 	border: 1px solid #1f1f1f;
 	background: #1a1a1a;
+	transition: all 0.5s;
 }
 .movies__right::after {
 	content: "";
@@ -888,7 +854,49 @@ h1 {
 	width: 17px;
 	height: 17px;
 }
-.movies__cards {
+.movies__right:hover {
+	background: #e50000;
+	transition: all 0.5s;
+}
+@media (max-width: 1440px) {
+	.movies__title h5 {
+		font-size: 30px;
+	}
+	.movies {
+		border-radius: 12px;
+		gap: 40px;
+		padding: 40px;
+		margin-block-end: 64px;
+	}
+	.movies__scroll {
+		gap: 12px;
+		border-radius: 10px;
+		padding: 12px;
+	}
+	.movies__left {
+		padding: 14px;
+		border-radius: 6px;
+	}
+	.movies__left::before {
+		width: 15px;
+		height: 15px;
+	}
+	.scroller__01 {
+		width: 18px;
+		height: 4px;
+	}
+	.scroller__rest {
+		width: 14px;
+		height: 4px;
+	}
+	.movies__right {
+		padding: 14px;
+		border-radius: 6px;
+	}
+	.movies__right::after {
+		width: 15px;
+		height: 15px;
+	}
 }
 .card {
 	display: flex;
@@ -905,7 +913,6 @@ h1 {
 .card__item {
 	display: flex;
 	flex-direction: column;
-	/* flex: 0 1 23.98%; */
 	flex: 0 1 calc(100% / 4 - ((20px * 3) / 4));
 	aspect-ratio: 320/404;
 	row-gap: 20px;
@@ -914,39 +921,11 @@ h1 {
 	border: #262626;
 	background: #1a1a1a;
 }
-@media (max-width: 1450px) {
-	.card__item {
-		aspect-ratio: 253/324;
-		row-gap: 16px;
-		padding: 16px;
-		border-radius: 10px;
-	}
-	.card__item img {
-		border-radius: 10px;
-	}
-	.card__time {
-		font-size: 12px;
-	}
-	.card__time::before {
-		width: 16px;
-		height: 16px;
-	}
-	.card__stars img {
-		width: 14px;
-		max-width: 100%;
-		object-fit: cover;
-		aspect-ratio: 1;
-	}
-	.card__rating {
-		font-size: 12px;
-	}
-}
-@media (max-width: 1399px) {
-}
 .card__bottom {
 	display: flex;
 	justify-content: space-between;
-	gap: 2px;
+	align-items: center;
+	gap: 5px;
 }
 .card__time {
 	display: flex;
@@ -955,7 +934,7 @@ h1 {
 	gap: 2px;
 	border: 1px solid #262626;
 	background: #141414;
-	padding: 6px 10px 6px 6px;
+	padding: 6px 10px;
 	color: #999999;
 	font-size: 16px;
 	font-weight: 500;
@@ -971,8 +950,8 @@ h1 {
 .card__stars {
 	display: flex;
 	align-items: center;
-	padding: 6px 10px;
-	gap: 4px;
+	padding: 6px 10px 6px 6px;
+	gap: 2px;
 	border-radius: 51px;
 	border: 1px solid #262626;
 	background: #141414;
@@ -988,6 +967,56 @@ h1 {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 150%;
+}
+@media (max-width: 1440px) {
+	.card {
+		column-gap: 16px;
+		row-gap: 16px;
+	}
+	.card__item {
+		aspect-ratio: 253/324;
+		row-gap: 16px;
+		padding: 16px;
+		border-radius: 10px;
+	}
+	.card__item img {
+		border-radius: 10px;
+	}
+	.card__time {
+		padding: 5px 9px 5px 5px;
+	}
+	.card__stars {
+		padding: 5px 9px;
+	}
+	.card__rating {
+	}
+}
+@media (max-width: 1343px) {
+	.card__time::before {
+		width: 16px;
+		height: 16px;
+	}
+	.card__stars img {
+		width: 14px;
+	}
+	.card__time {
+		font-size: 12px;
+		padding: 4px 6px 4px 4px;
+	}
+	.card__stars {
+		padding: 4px 6px;
+	}
+	.card__rating {
+		font-size: 12px;
+	}
+}
+@media (max-width: 1126px) {
+	.card__time {
+		padding: 2px 4px;
+	}
+	.card__stars {
+		padding: 2px 4px;
+	}
 }
 /* .genres {
 	padding-block-start: 75px;
