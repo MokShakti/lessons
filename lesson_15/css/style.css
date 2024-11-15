@@ -1306,13 +1306,31 @@ h1 {
 	}
 	.cards__row img {
 		border-radius: 6px;
-		aspect-ratio: 85 / 91;
+		/* aspect-ratio: 85 / 91; */
 	}
 	.cards__genre {
 		font-size: 16px;
 	}
 }
-
+/* @media (max-width: 1390) {
+	.cards__genres {
+		flex: 0 1 260px;
+	}
+	.cards__row img {
+		aspect-ratio: 95 / 91;
+	}
+} */
+@media (max-width: 1350px) {
+	.cards {
+		flex-wrap: wrap;
+	}
+	.cards__genres {
+		flex: 0 1 224px;
+	}
+	.cards__row img {
+		aspect-ratio: 85 / 91;
+	}
+}
 @media (max-width: 1126px) {
 	.genres__title h5 {
 		font-size: 24px;
@@ -1338,6 +1356,17 @@ h1 {
 		font-size: 14px;
 	}
 }
+/* @media (max-width: 980px) {
+	.cards {
+		flex-wrap: wrap;
+	}
+	.cards__genres {
+		flex: 0 1 224px;
+	}
+	.cards__row img {
+		aspect-ratio: 85 / 91;
+	}
+} */
 @media (max-width: 900px) {
 	.cards {
 		gap: 15px;
