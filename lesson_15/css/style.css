@@ -398,23 +398,17 @@ h1 {
 	text-decoration: underline;
 }
 .get-started__card {
-	/* flex-basis: 338px; */
 	flex: 1 1 28%;
-	aspect-ratio: 338/176;
 	position: relative;
-	border-radius: 6px;
-	box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
-	z-index: 3;
-	position: relative;
-	width: 100%;
-	/* padding-bottom: 32px; */
+	flex-basis: 338px;
+	padding-bottom: 32px;
 }
 .get-started__card img {
-	/* border-radius: 6px;
-	box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
+	aspect-ratio: 338/176;
 	z-index: 3;
 	position: relative;
-	width: 100%; */
+	max-width: 100%;
+	box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
 }
 .get-started__card::after {
 	content: "";
@@ -422,10 +416,8 @@ h1 {
 	top: 8px;
 	left: 16px;
 	z-index: 2;
-	width: 306px;
-	height: 176px;
-	/* width: calc(100% - 32px);
-	height: calc(100% - 32px); */
+	width: calc(100% - 32px);
+	height: calc(100% - 32px);
 	border-radius: 6px;
 	background-color: #fff;
 	box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
@@ -436,10 +428,8 @@ h1 {
 	top: 16px;
 	left: 32px;
 	z-index: 1;
-	width: 274px;
-	height: 176px;
-	/* width: calc(100% - 64px);
-	height: calc(100% - 32px); */
+	width: calc(100% - 64px);
+	height: calc(100% - 32px);
 	border-radius: 6px;
 	background-color: #fff;
 	box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
