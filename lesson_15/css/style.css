@@ -257,6 +257,14 @@ h1 {
 		line-height: 48%;
 	}
 }
+@media (max-width: 551px) {
+	.column__label {
+		overflow-wrap: break-word;
+		text-align: left;
+		line-height: 100%;
+		max-width: 244px;
+	}
+}
 .buttons {
 	position: relative;
 	text-align: center;
