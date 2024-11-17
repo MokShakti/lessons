@@ -351,6 +351,7 @@ h1 {
 .button {
 	padding: 18px 32px;
 	position: relative;
+	cursor: pointer;
 }
 .button::before {
 	content: "";
@@ -385,7 +386,7 @@ h1 {
 	opacity: 1;
 	transform: scale(1);
 }
-.button__text {
+.button span {
 	color: #ffffff;
 	text-align: center;
 	font-size: 14px;
@@ -395,8 +396,9 @@ h1 {
 	text-transform: uppercase;
 	transition: all 0.8s;
 }
-.button__text:hover {
+.button:hover {
 	text-decoration: underline;
+	color: #ffffff;
 }
 .get-started__card {
 	position: relative;
@@ -649,6 +651,7 @@ h1 {
 	letter-spacing: -1px;
 }
 .arrows {
+	cursor: pointer;
 	display: flex;
 	gap: 16px;
 	align-items: flex-end;
@@ -721,6 +724,7 @@ h1 {
 	line-height: 200%;
 }
 .circle {
+	cursor: pointer;
 	display: flex;
 	gap: 20px;
 	justify-content: center;
