@@ -95,6 +95,7 @@ body {
 	text-transform: uppercase;
 	padding: 18px 34px;
 	border-radius: 6px;
+	transition: all 0.7s;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .icon-menu {
@@ -206,6 +207,13 @@ body {
 @media (max-width: 430px) {
 	.nav__button {
 		display: none;
+	}
+}
+@media (any-hover: hover) {
+	.nav__button:hover {
+		background-color: #ef6d58;
+		transform: scale(0.9);
+		transition: all 0.7s;
 	}
 }
 /* -------------------------------------- */
