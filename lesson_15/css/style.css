@@ -158,19 +158,22 @@ h1 {
 	margin-block-end: 64px;
 }
 .column__item {
-	flex: 0 1 40%;
+	flex: 1 0 40%;
 	aspect-ratio: 470/416;
+	width: 100%;
 	display: flex;
 	align-items: flex-end;
 	position: relative;
 	padding: 51px 48px;
 }
 .column__item:nth-child(4n + 2) {
-	flex: 0 1 57%;
+	flex: 1 0 57%;
+	width: 100%;
 	aspect-ratio: 670/416;
 }
 .column__item:nth-child(4n + 3) {
-	flex: 0 1 57%;
+	flex: 1 0 57%;
+	width: 100%;
 	aspect-ratio: 670/416;
 }
 .column__item img {
@@ -179,6 +182,7 @@ h1 {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
 	height: 100%;
 	border-radius: 6px;
 	will-change: transform;
@@ -230,25 +234,27 @@ h1 {
 	line-height: 120%;
 	text-transform: capitalize;
 }
-@media (max-width: 1060px) {
+@media (max-width: 1030px) {
 	.column {
-		display: flex;
 		justify-content: center;
-		gap: 15px;
+		column-gap: 15px;
+		row-gap: 15px;
 		margin-block-end: 48px;
 	}
 	.column__item {
-		flex: 0 1 100%;
-		aspect-ratio: 329/416;
+		/* max-width: 329px; */
+		flex-basis: 329px;
+		aspect-ratio: 1;
+		height: 100%;
 		padding: 51px 28px;
 	}
 	.column__item:nth-child(4n + 2) {
-		aspect-ratio: 329/416;
-		flex: 0 1 100%;
+		flex-basis: 329px;
+		aspect-ratio: 1;
 	}
 	.column__item:nth-child(4n + 3) {
-		aspect-ratio: 329/416;
-		flex: 0 1 100%;
+		flex-basis: 329px;
+		aspect-ratio: 1;
 	}
 	.column__button {
 		margin-bottom: 23px;
@@ -263,6 +269,17 @@ h1 {
 		text-align: left;
 		line-height: 100%;
 		max-width: 244px;
+	}
+}
+@media (max-width: 351px) {
+	.column__item {
+		flex-basis: 129px;
+	}
+	.column__item:nth-child(4n + 2) {
+		flex-basis: 129px;
+	}
+	.column__item:nth-child(4n + 3) {
+		flex-basis: 129px;
 	}
 }
 .buttons {
@@ -301,13 +318,15 @@ h1 {
 	border-radius: 6px;
 	border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.buttons:hover::before {
-	transform: rotate(-45deg);
-	background-color: rgba(255, 255, 255, 0);
-}
-.buttons:hover::after {
-	transform: rotate(45deg);
-	background-color: rgba(255, 255, 255, 0);
+@media (any-hover: hover) {
+	.buttons:hover::before {
+		transform: rotate(-45deg);
+		background-color: rgba(255, 255, 255, 0);
+	}
+	.buttons:hover::after {
+		transform: rotate(45deg);
+		background-color: rgba(255, 255, 255, 0);
+	}
 }
 
 /* ----------------------------------------- */
