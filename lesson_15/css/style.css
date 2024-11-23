@@ -33,12 +33,12 @@ body {
 	flex-grow: 1;
 }
 [class*="__container"] {
-	max-width: 1215px;
+	max-width: 1200px;
+	width: 100%;
 	padding-inline: 15px;
 	margin-inline: auto;
 }
 .page {
-	width: 100%;
 }
 
 /* FIRST HALF */
@@ -49,10 +49,10 @@ body {
 	padding-block-start: 90px;
 }
 .portfolio__top {
-	text-align: center;
 	margin-block-end: 117px;
 }
 .portfolio__title {
+	text-align: center;
 	margin-block-end: 20px;
 }
 h1 {
@@ -62,6 +62,7 @@ h1 {
 	text-transform: uppercase;
 }
 .portfolio__subtitle {
+	text-align: center;
 	margin-block-end: 36px;
 }
 .portfolio__top h2 {
@@ -155,7 +156,7 @@ h1 {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 32px 30px;
-	margin-block-end: 64px;
+	padding-block-end: 64px;
 }
 .column__item {
 	flex: 1 0 40%;
@@ -185,7 +186,6 @@ h1 {
 	width: 100%;
 	height: 100%;
 	border-radius: 6px;
-	will-change: transform;
 }
 .column__item::after {
 	content: "";
@@ -282,6 +282,11 @@ h1 {
 		flex-basis: 129px;
 	}
 }
+
+.portfolio__button-container {
+	display: flex;
+	justify-content: center;
+}
 .buttons {
 	position: relative;
 	text-align: center;
@@ -337,19 +342,21 @@ h1 {
 	padding-block-end: 70px;
 }
 .get-started__container {
+	background-color: #fdf0e9;
+	border-radius: 6px;
+}
+.get-started__items {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
-	column-gap: 30px;
+	column-gap: 15px;
 	row-gap: 30px;
-	background-color: #fdf0e9;
-	border-radius: 6px;
 	padding-inline: 100px 83px;
 }
 .left {
-	max-width: 248px;
+	flex: 1 1 21.1965%;
 	padding-block: 75px;
 }
 .left__stargift::after {
@@ -391,10 +398,6 @@ h1 {
 	background-color: rgba(239, 109, 88, 1);
 	transition: all 0.5s;
 }
-.button:hover::before {
-	opacity: 0;
-	transform: scale(0.5);
-}
 .button::after {
 	content: "";
 	position: absolute;
@@ -409,10 +412,6 @@ h1 {
 	border: 1px solid rgba(239, 109, 88, 0.5);
 	transform: scale(1.2);
 }
-.button:hover::after {
-	opacity: 1;
-	transform: scale(1);
-}
 .button span {
 	color: #ffffff;
 	text-align: center;
@@ -423,13 +422,23 @@ h1 {
 	text-transform: uppercase;
 	transition: all 0.8s;
 }
-.button:hover {
-	text-decoration: underline;
-	color: #ffffff;
+@media (any-hover: hover) {
+	.button:hover::before {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+	.button:hover::after {
+		opacity: 1;
+		transform: scale(1);
+	}
+	.button:hover {
+		text-decoration: underline;
+		color: #ffffff;
+	}
 }
 .get-started__card {
 	position: relative;
-	flex-basis: 338px;
+	flex: 1 1 28.8888%;
 	padding-bottom: 32px;
 }
 .get-started__card img {
@@ -437,6 +446,7 @@ h1 {
 	z-index: 3;
 	position: relative;
 	max-width: 100%;
+	height: 100%;
 	box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
 }
 .get-started__card::after {
@@ -464,17 +474,16 @@ h1 {
 	box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
 }
 .get-started__right {
-	flex-basis: 294px;
+	flex: 1 1 239px;
 	align-self: flex-end;
 	position: relative;
 	padding-left: 53px;
-	margin-block-start: -60px;
 	z-index: 10;
 }
 .get-started__right::before {
 	content: "";
 	background: url("../img/13/svg/cloudsvg.svg") center / contain no-repeat;
-	right: -5%;
+	right: -3%;
 	bottom: 11.8687%; /* 47/396 */
 	width: calc(100% + 43px);
 	height: 61.1111%; /* 242/396 */
@@ -482,14 +491,29 @@ h1 {
 }
 .get-started__right img {
 	position: relative;
-	max-width: 100%;
+	width: 100%;
+	height: 100%;
 }
-@media (max-width: 1060px) {
-	.left {
-		padding-block: 45px;
+@media (min-width: 970px) {
+	.get-started__right {
+		margin-block-start: -60px;
 	}
-	.get-started__container {
+}
+@media (max-width: 1100px) {
+	.get-started__items {
+		column-gap: 10px;
+		row-gap: 30px;
+		padding-inline: 50px 41px;
+	}
+}
+@media (max-width: 971px) {
+	.left {
+		padding-block-end: 45px;
+	}
+	.get-started__items {
+		flex-wrap: wrap;
 		flex-direction: column;
+		justify-content: center;
 		row-gap: 30px;
 		padding-inline: 30px;
 	}
@@ -502,7 +526,6 @@ h1 {
 	.get-started__right {
 		flex: 1 1 24%;
 		align-self: center;
-		margin-block-start: 0px;
 	}
 }
 @media (max-width: 730px) {
@@ -545,15 +568,16 @@ h1 {
 	justify-content: center;
 	flex-wrap: wrap;
 	column-gap: 27px;
+	padding-block-end: 64px;
 }
 .events__card {
-	flex: 0 1 31%;
+	flex: 0 1 30%;
+	min-width: 329px;
 	display: flex;
 	flex-direction: column;
 	border-radius: 6px;
 	border: 1px solid #3a3c56;
 	padding: 40px;
-	margin-block-end: 64px;
 }
 .events__head {
 	display: flex;
@@ -809,9 +833,6 @@ h1 {
 	}
 }
 @media (max-width: 935px) {
-	.team__head {
-		max-width: 329px;
-	}
 	.team__img-card {
 		flex: 0 1 calc(100% / 2 - ((30px * 1) / 2));
 	}
@@ -918,7 +939,7 @@ h1 {
 		padding-block-start: 58px;
 	}
 	.founder__text {
-		flex-basis: 329px;
+		flex-basis: 500px;
 	}
 	.founder__label {
 		margin-block-end: 29px;
