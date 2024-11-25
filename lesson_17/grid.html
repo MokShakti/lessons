@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 17</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="header-container">
+				<div class="header-container__title">
+					<a href="portfolio.html">Homework 17. GRID. Press to go to Portfolio.</a>
+				</div>
+			</div>
+		</header>
+		<main class="grid">
+			<div class="portfolio-grid">
+				<div class="portfolio-grid__container">
+					<div class="portfolio-grid__top">
+						<div class="portfolio-grid__header">
+							<h1 class="portfolio-grid__title">Portfolio</h1>
+							<h2 class="portfolio-grid__subtitle">Latest Work</h2>
+						</div>
+						<ul class="portfolio-grid__list">
+							<li class="portfolio-grid__item">
+								<a href="#">Show All<sup>14</sup></a>
+							</li>
+							<li class="portfolio-grid__item">
+								<a href="#design">Design<sup>6</sup></a>
+							</li>
+							<li class="portfolio-grid__item">
+								<a href="#branding">Branding<sup>4</sup></a>
+							</li>
+							<li class="portfolio-grid__item">
+								<a href="#illustration">Illustration<sup>3</sup></a>
+							</li>
+							<li class="portfolio-grid__item">
+								<a href="#motion">Motion<sup>1</sup></a>
+							</li>
+						</ul>
+						<div class="portfolio-grid__box">
+							<svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5 6L10 0H0L5 6Z" fill="#EF6D58" />
+							</svg>
+							<select class="portfolio-grid__select" name="form[select]">
+								<option selected value="Show All">Show All</option>
+								<option value="Design">Design</option>
+								<option value="Branding">Branding</option>
+								<option value="Illustration">Illustration</option>
+								<option value="Motion">Motion</option>
+							</select>
+						</div>
+						<div class="portfolio-grid__column column-grid">
+							<a id="design" href="#" class="column-grid__item">
+								<div class="column-grid__image">
+									<img src="img/13/webp/sofa.webp" alt="Textile, which looks like a silk coverage that turns it into stairs.">
+								</div>
+								<div class="column-grid__text">
+									<div class="column-grid__button">Design</div>
+									<h3 class="column-grid__label">SOFA</h3>
+								</div>
+							</a>
+							<a id="branding" href="#" class="column-grid__item">
+								<div class="column-grid__image">
+									<img src="img/13/webp/keyboard.webp" alt="Room that has an arch and a podium for a mannequin in the middle.">
+								</div>
+								<div class="column-grid__text">
+									<div class="column-grid__button">Branding</div>
+									<h3 class="column-grid__label">KeyBoard</h3>
+								</div>
+							</a>
+							<a id="illustration" href="#" class="column-grid__item">
+								<div class="column-grid__image">
+									<img src="img/13/webp/media.webp" alt="Four cylinder shaped figures.">
+								</div>
+								<div class="column-grid__text">
+									<div class="column-grid__button">Illustration</div>
+									<h3 class="column-grid__label">Work Media</h3>
+								</div>
+							</a>
+							<a id="motion" href="#" class="column-grid__item">
+								<div class="column-grid__image">
+									<img src="img/13/webp/ddone.webp" alt="Three cubes with a different shapes inside">
+								</div>
+								<div class="column-grid__text">
+									<div class="column-grid__button">Motion</div>
+									<h3 class="column-grid__label">DDDone</h3>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="portfolio-grid__button buttons-grid">Explore More</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-content">
+				<p>display:none</p>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
