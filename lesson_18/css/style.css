@@ -52,70 +52,123 @@ body {
 .page__item .page__image {
 	aspect-ratio: 305/184;
 }
+.page__container {
+	padding-block: 50px;
+}
 /* -------------------------------------- */
 
 @media (min-width: 970px) {
 	.page__items {
 		display: grid;
-		padding-block: 50px;
 		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 19fr 1fr 11fr 1fr 19fr 19fr 1fr 11fr 1fr 19fr;
-		grid-auto-flow: row;
+		/* grid-template-rows: 19fr 1fr 11fr 1fr 19fr 19fr 1fr 11fr 1fr 19fr; */
 		column-gap: 32px;
 		row-gap: 24px;
 	}
+	/* ------------------------------- */
 	.page__item:nth-child(17n + 1),
 	.page__item:nth-child(17n + 4),
-	.page__item:nth-child(17n + 6),
-	.page__item:nth-child(17n + 14),
-	.page__item:nth-child(17n + 15) {
+	.page__item:nth-child(17n + 8),
+	.page__item:nth-child(17n + 10),
+	.page__item:nth-child(17n + 16) {
 		grid-row: span 2;
 	}
-
-	.page__item:nth-child(17n + 2),
+	/* .page__item:nth-child(17n + 1),
 	.page__item:nth-child(17n + 4),
-	.page__item:nth-child(17n + 5),
-	.page__item:nth-child(17n + 13),
+	.page__item:nth-child(17n + 8),
+	.page__item:nth-child(17n + 10),
 	.page__item:nth-child(17n + 16) {
+		grid-row: span 2;
+	} */
+	/* ------------------------------- */
+	.page__item:nth-child(17n + 2),
+	.page__item:nth-child(17n + 6),
+	.page__item:nth-child(17n + 7),
+	.page__item:nth-child(17n + 12),
+	.page__item:nth-child(17n + 15) {
 		grid-row: span 3;
 	}
-
-	.page__item:nth-child(17n + 7),
-	.page__item:nth-child(17n + 8),
+	/* .page__item:nth-child(17n + 2),
+	.page__item:nth-child(17n + 3),
 	.page__item:nth-child(17n + 9),
-	.page__item:nth-child(17n + 10),
 	.page__item:nth-child(17n + 11),
-	.page__item:nth-child(17n + 12) {
+	.page__item:nth-child(17n + 15) {
+		grid-row: span 3;
+	} */
+	/* ------------------------------- */
+	.page__item:nth-child(17n + 3),
+	.page__item:nth-child(17n + 5),
+	.page__item:nth-child(17n + 9),
+	.page__item:nth-child(17n + 11),
+	.page__item:nth-child(17n + 14),
+	.page__item:nth-child(17n + 17) {
 		grid-row: span 1;
 	}
-
-	.page__item:nth-child(17n + 17) {
+	/* .page__item:nth-child(17n + 5),
+	.page__item:nth-child(17n + 6),
+	.page__item:nth-child(17n + 7),
+	.page__item:nth-child(17n + 12),
+	.page__item:nth-child(17n + 13),
+	.page__item:nth-child(17n + 14) {
+		grid-row: span 1;
+	} */
+	/* ------------------------------- */
+	.page__item:nth-child(17n + 13) {
 		grid-row: span 5;
 	}
+	/* .page__item:nth-child(17n + 17) {
+		grid-row: span 5;
+	} */
+	/* ------------------------------- */
 	.page__item:nth-child(17n + 1) .page__image,
+	.page__item:nth-child(17n + 4) .page__image,
+	.page__item:nth-child(17n + 8) .page__image,
+	.page__item:nth-child(17n + 10) .page__image,
+	.page__item:nth-child(17n + 16) .page__image {
+		aspect-ratio: 305 / 184;
+	}
+	/* .page__item:nth-child(17n + 1) .page__image,
 	.page__item:nth-child(17n + 3) .page__image,
 	.page__item:nth-child(17n + 6) .page__image,
 	.page__item:nth-child(17n + 14) .page__image,
 	.page__item:nth-child(17n + 15) .page__image {
-		aspect-ratio: 304 / 184;
-	}
+		aspect-ratio: 305 / 184;
+	} */
+	/* ------------------------------- */
 	.page__item:nth-child(17n + 2) .page__image,
+	.page__item:nth-child(17n + 6) .page__image,
+	.page__item:nth-child(17n + 7) .page__image,
+	.page__item:nth-child(17n + 12) .page__image,
+	.page__item:nth-child(17n + 15) .page__image {
+		aspect-ratio: 305 / 296;
+	}
+	/* .page__item:nth-child(17n + 2) .page__image,
 	.page__item:nth-child(17n + 4) .page__image,
 	.page__item:nth-child(17n + 5) .page__image,
 	.page__item:nth-child(17n + 13) .page__image,
 	.page__item:nth-child(17n + 16) .page__image {
-		aspect-ratio: 304 / 296;
+		aspect-ratio: 305 / 296;
+	} */
+	/* ------------------------------- */
+	.page__item:nth-child(17n + 3) .page__image,
+	.page__item:nth-child(17n + 5) .page__image,
+	.page__item:nth-child(17n + 9) .page__image,
+	.page__item:nth-child(17n + 11) .page__image,
+	.page__item:nth-child(17n + 14) .page__image,
+	.page__item:nth-child(17n + 17) .page__image {
+		aspect-ratio: 305 / 152;
 	}
-	.page__item:nth-child(17n + 7) .page__image,
+	/* .page__item:nth-child(17n + 7) .page__image,
 	.page__item:nth-child(17n + 8) .page__image,
 	.page__item:nth-child(17n + 9) .page__image,
 	.page__item:nth-child(17n + 10) .page__image,
 	.page__item:nth-child(17n + 11) .page__image,
 	.page__item:nth-child(17n + 12) .page__image {
-		aspect-ratio: 304 / 152;
-	}
-	.page__item:nth-child(17n + 17) .page__image {
-		aspect-ratio: 304 / 504;
+		aspect-ratio: 305 / 152;
+	} */
+	/* ------------------------------- */
+	.page__item:nth-child(17n + 13) .page__image {
+		aspect-ratio: 305 / 504;
 	}
 }
 
