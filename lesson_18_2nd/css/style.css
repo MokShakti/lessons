@@ -251,9 +251,11 @@ header {
 .hero {
 }
 .hero__container {
+	overflow: hidden;
 }
 .introduce {
 	position: relative;
+	/* overflow: hidden; */
 }
 .introduce__content {
 	position: relative;
@@ -338,6 +340,8 @@ header {
 	.introduce__image {
 		flex: 0 0 50%;
 		align-self: flex-end;
+
+		/* margin-right: -200px; */
 		/* position: absolute;
 		top: 21.39737%;
 		right: -36.63697%;
