@@ -39,6 +39,7 @@ header {
 	z-index: 999;
 }
 .header {
+	/* position: relative; */
 }
 .header__container {
 	min-height: 60px;
@@ -47,7 +48,7 @@ header {
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
 	align-items: center;
-	column-gap: 15px;
+	/* column-gap: 15px; */
 	padding-block: 18px;
 }
 .nav__navigation {
@@ -153,6 +154,15 @@ header {
 	}
 }
 @media (max-width: 770px) {
+	.nav__navigation {
+		order: 2;
+	}
+	.nav__logo {
+		order: 1;
+	}
+	.nav__buttons {
+		order: 3;
+	}
 	.nav__buttons {
 		display: none;
 		column-gap: 15px;
@@ -164,6 +174,7 @@ header {
 		flex-direction: column;
 		flex-shrink: 0;
 		flex-basis: 30px;
+		width: 30px;
 	}
 	.icon-menu span {
 		margin-block: 6px;
@@ -241,45 +252,96 @@ header {
 }
 .hero__container {
 }
-/* .introduce {
-	display: flex;
-	padding-block: 170px;
-} */
+.introduce {
+	position: relative;
+}
 .introduce__content {
+	position: relative;
 }
 .introduce__top {
+	padding-block: 70px;
 }
-.introduce__label {
+.introduce__body {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+.introduce__title {
 	color: #091133;
 	font-size: 50px;
 	font-weight: 500;
 	line-height: 132%;
 	letter-spacing: 1px;
-	z-index: 2;
 }
 .introduce__text {
 	color: #505f98;
 	font-size: 18px;
 	line-height: 166.667%;
-	z-index: 2;
+}
+.introduce__text p:nth-child(1) {
+	padding-block-end: 25px;
 }
 .introduce__buttons {
+	display: flex;
+	column-gap: 30px;
 }
 .introduce__purchase {
+	border-radius: 2px;
+	background: #111b47;
+	color: #fff;
+	text-align: center;
+	font-weight: 500;
+	line-height: 162.5%;
+	padding: 11px 40px;
 }
 .introduce__learn {
-}
-.introduce__images {
-}
-.introduce__element {
+	color: #091133;
+	text-align: center;
+	font-weight: 500;
+	line-height: 162.5%;
+	border-radius: 2px;
+	border: 2px solid #091133;
+	padding: 11px 55px;
 }
 .introduce__image {
+	/* aspect-ratio: 646/780; */
+	aspect-ratio: 974/780;
+}
+.introduce__image img {
+	width: 100%;
+	/* height: 100%;
+	aspect-ratio: 1; */
+}
+.introduce__person {
 }
 
 @media (min-width: 770px) {
 	.introduce {
 		display: flex;
 		padding-block: 170px;
+		column-gap: 90px;
+	}
+	.introduce__content {
+		flex: 0 0 50%;
+		/* flex-basis: 539px; */
+	}
+	.introduce::before {
+		content: "";
+		background: url("../img/svg/elementdesign.svg") 0 0 / contain no-repeat;
+		aspect-ratio: 1490/1161;
+		width: 1490px;
+		position: absolute;
+		top: -9.60698%;
+		right: -52.11581%;
+		z-index: -1;
+	}
+	.introduce__image {
+		flex: 0 0 50%;
+		align-self: flex-end;
+		/* position: absolute;
+		top: 21.39737%;
+		right: -36.63697%;
+		right: 0; */
 	}
 }
 
