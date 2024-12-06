@@ -33,10 +33,6 @@ body {
 	width: 100%;
 }
 /* ----------------------------------- */
-header {
-	top: 0;
-	z-index: 999;
-}
 .header__container {
 	min-height: 60px;
 }
@@ -53,11 +49,13 @@ header {
 	display: flex;
 	column-gap: 30px;
 }
-.nav__logo {
+[class*="__logo"] {
 	color: #37447e;
 	font-size: 26px;
 	font-weight: 900;
 	line-height: 146.154%;
+}
+.nav__logo {
 	animation: heartbeat 3s ease-in-out 1 backwards;
 }
 @keyframes heartbeat {
@@ -85,6 +83,7 @@ header {
 	color: #505f98;
 	font-size: 14px;
 	line-height: 171.429%;
+	transition: 0.4s;
 }
 .nav__buttons {
 	justify-self: end;
@@ -153,10 +152,14 @@ header {
 	.icon-menu::after {
 		content: "";
 		height: 2px;
+		position: relative;
 		z-index: 3;
 		transition: all 0.3s;
 		width: 100%;
 		background-color: #505f98;
+	}
+	.open-menu body {
+		overflow: hidden;
 	}
 	.open-menu .nav__body,
 	.open-menu .nav__body::before {
@@ -210,7 +213,7 @@ header {
 	}
 }
 
-@media (max-width: 430px) {
+@media (max-width: 415px) {
 	.nav__button {
 		display: none;
 	}
@@ -227,7 +230,7 @@ header {
 	position: relative;
 }
 .introduce__top {
-	padding-block: 70px;
+	padding-block: 69px;
 }
 .introduce__body {
 	display: flex;
@@ -265,6 +268,7 @@ header {
 	font-weight: 500;
 	line-height: 162.5%;
 	padding: 4px 40px;
+	transition: 0.7s;
 }
 .introduce__learn {
 	color: #091133;
@@ -274,6 +278,7 @@ header {
 	border-radius: 2px;
 	border: 2px solid #091133;
 	padding: 4px 52px;
+	transition: 0.7s;
 }
 .introduce__image {
 	aspect-ratio: 974/780;
@@ -417,6 +422,7 @@ header {
 	border-radius: 2px;
 	background: #111b47;
 	padding: 4px 40px;
+	transition: 0.7s;
 }
 /* -------------------PRICING------------------------ */
 
@@ -492,13 +498,17 @@ header {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 171.429%;
+	transition: 0.7s;
 }
 
 /* --------------------FOOTER-------------------------- */
-
+.footer {
+	background: #e7ecff;
+}
 .footer__container {
 	display: flex;
 	flex-direction: column;
+	padding-block-start: 61px;
 	padding-block-end: 32px;
 }
 .row-company {
@@ -516,12 +526,6 @@ header {
 	line-height: 171.429%;
 	justify-self: start;
 }
-.row-company__logo {
-	color: #37447e;
-	font-size: 26px;
-	font-weight: 900;
-	line-height: 146.154%;
-}
 .row-company__button {
 	color: #fff;
 	text-align: center;
@@ -532,6 +536,7 @@ header {
 	background: #111b47;
 	padding: 4px 25px;
 	justify-self: end;
+	transition: 0.7s;
 }
 .social {
 	display: flex;
@@ -550,6 +555,7 @@ header {
 	color: #929ecc;
 	font-size: 14px;
 	line-height: 171.429%;
+	transition: 0.4s;
 }
 .social__icons {
 	display: flex;
@@ -560,6 +566,7 @@ header {
 .social__icon {
 	width: 16px;
 	aspect-ratio: 1;
+	transition: 0.3s;
 }
 .social__icon img {
 	width: 100%;
@@ -591,6 +598,7 @@ header {
 	.introduce__image {
 		flex-basis: 50%;
 		margin-right: -329px;
+		aspect-ratio: 974/780;
 	}
 	.mobile__content {
 		flex-basis: 50%;
@@ -624,8 +632,14 @@ header {
 	.mobile__image {
 		align-self: center;
 	}
+	.introduce__buttons {
+		flex-direction: column;
+	}
 }
 @media (max-width: 770px) {
+	.introduce {
+		padding-block-start: 30px;
+	}
 	.introduce__image {
 		flex-basis: 100%;
 	}
@@ -637,6 +651,9 @@ header {
 	}
 	.news__container {
 		flex-wrap: wrap;
+	}
+	.news--padding {
+		padding-block-end: 100px;
 	}
 	.news__image {
 		flex-basis: 100%;
@@ -672,9 +689,31 @@ header {
 /* ------------------------------- */
 
 @media (any-hover: hover) {
-	.nav__button:hover {
+	.nav__button:hover,
+	.introduce__purchase:hover,
+	.introduce__learn:hover,
+	.news__button:hover,
+	.pricing__button:hover,
+	.row-company__button:hover {
 		background-color: #ef6d58;
 		transform: scale(0.9);
 		transition: 0.7s;
+	}
+	[class*="__link"]:hover {
+		transform: scale(1.1);
+		transition: 0.4s;
+		will-change: transform;
+		color: #111b47;
+	}
+	/* .nav__link:hover {
+		transform: scale(1.1);
+		transition: 0.2s;
+		will-change: transform;
+		color: #111b47;
+	} */
+	.social__icon:hover {
+		transform: scale(1.2);
+		will-change: transform;
+		transition: 0.3s;
 	}
 }
