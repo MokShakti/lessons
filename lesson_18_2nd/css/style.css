@@ -460,15 +460,13 @@ body {
 }
 .pricing__content::before {
 	content: "";
-	background: url("../img/svg/bottomsvg.svg") center / cover no-repeat;
-	/* aspect-ratio: 2547/938; */
-	width: 2547px;
-	height: 938px;
-	/* width: 100vw; */
+	background: url("../img/svg/bottomsvg.svg") center / contain no-repeat;
+	width: 2511px;
+	height: 933px;
+	width: 100vw;
 	z-index: -1;
 	position: absolute;
-	right: -451px;
-	/* left: -67.3%; */
+	left: 0;
 	top: 0;
 }
 .pricing__title {
