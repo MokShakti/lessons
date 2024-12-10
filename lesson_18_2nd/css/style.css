@@ -176,6 +176,11 @@ body {
 	.open-menu .icon-menu::after {
 		transform: rotate(-45deg) translateY(-1.5px);
 	}
+	.open-menu .icon-menu::before,
+	.open-menu .icon-menu::after {
+		content: "";
+		background-color: #ffffff;
+	}
 	.nav__body {
 		position: fixed;
 		inset-inline-start: 100%;
@@ -210,6 +215,7 @@ body {
 	.nav__link {
 		font-size: 25px;
 		padding: 0;
+		color: #ffffff;
 	}
 }
 
@@ -285,7 +291,9 @@ body {
 }
 .introduce__image img {
 	width: 100%;
-	aspect-ratio: 1;
+	height: 100%;
+	object-fit: cover;
+	/* aspect-ratio: 1; */
 }
 /* -------------------MOBILE SECTION------------------- */
 
@@ -358,11 +366,20 @@ body {
 
 /* -----------------NEWS--------------------- */
 
-.news {
+/* .news {
 	padding-block-start: 115px;
+} */
+.news--padding01 {
+	padding-block-start: 115px;
+	padding-block-end: 56px;
 }
-.news--padding {
-	padding-block-end: 81px;
+.news--padding02 {
+	padding-block-start: 56px;
+	padding-block-end: 56px;
+}
+.news--padding03 {
+	padding-block-start: 56px;
+	padding-block-end: 56px;
 }
 .news__container {
 	display: flex;
@@ -429,9 +446,9 @@ body {
 .pricing {
 	padding-block-start: 81px;
 	padding-block-end: 67px;
+	position: relative;
 }
 .pricing__container {
-	position: relative;
 	max-width: 600px;
 	margin-inline: auto;
 }
@@ -443,13 +460,16 @@ body {
 }
 .pricing__content::before {
 	content: "";
-	background: url("../img/svg/bottomsvg.svg") 100% / cover no-repeat;
-	aspect-ratio: 2547/938;
+	background: url("../img/svg/bottomsvg.svg") center / cover no-repeat;
+	/* aspect-ratio: 2547/938; */
 	width: 2547px;
+	height: 938px;
+	/* width: 100vw; */
 	z-index: -1;
 	position: absolute;
-	/* left: -621px; */
-	top: -160px;
+	right: -451px;
+	/* left: -67.3%; */
+	top: 0;
 }
 .pricing__title {
 	color: #091133;
@@ -489,8 +509,6 @@ body {
 }
 .pricing__button {
 	text-align: center;
-	align-self: center;
-	margin: 0 auto;
 	padding: 4px 40px;
 	border-radius: 2px;
 	background: #111b47;
@@ -570,7 +588,8 @@ body {
 }
 .social__icon img {
 	width: 100%;
-	aspect-ratio: 1;
+	height: 100%;
+	object-fit: contain;
 }
 
 /* --------------------------------------------------- */
