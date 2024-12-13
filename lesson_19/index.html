@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 19</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container nav">
+				<a href="about.html" class="nav__logo">
+					<svg viewBox="0 0 46 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3.11358 17.5385L23 3.09017L42.8864 17.5385L35.2905 40.9164H10.7095L3.11358 17.5385Z" stroke="#EF6D58" stroke-width="5" />
+						<path d="M22.5 14L31.535 20.5643L28.084 31.1857H16.916L13.465 20.5643L22.5 14Z" fill="#EF6D58" />
+					</svg>
+					<div class="nav__name">Agency</div>
+				</a>
+				<div class="nav__navigation">
+					<div class="nav__body">
+						<ul class="nav__items">
+							<li class="nav__item">
+								<a href="#" class="nav__link">About</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Services</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Pricing</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Blog</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav__buttons">
+					<button class="nav__button" type="button">Contact</button>
+					<button class="nav__menu-icon icon-menu" type="button"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<section class="page__body">
+					<div class="page__left content">
+						<div class="content__header">
+							<div class="content__label">
+								<h1>Modern Studio</h1>
+							</div>
+							<div class="content__title">
+								<h2>We’re Help To Build Your Dream Project</h2>
+							</div>
+							<div class="content__info">
+								<p>Agency provides a full service range including technical skills, design, business understanding.</p>
+							</div>
+						</div>
+						<div class="content__buttons">
+							<button class="content__button">How We Work</button>
+							<a href="#" class="content__link">Contact Us</a>
+						</div>
+						<div class="content__bottom">
+							<div class="content__img">
+								<img src="img/webp/man.webp" alt="Smiling man">
+							</div>
+							<div class="content__quote">
+								<blockquote class="content__p">"Put themselves in the merchant's shoes"</blockquote>
+								<p class="content__signature">Meta Inc.</p>
+							</div>
+						</div>
+					</div>
+					<div class="page__right images">
+						<div class="images__picture images__picture--oval"></div>
+						<div class="images__picture images__picture--stars">
+							<img src="img/svg/starsinoval.svg" alt="Oval that has stars in it">
+						</div>
+						<div class="images__picture images__picture--cloud">
+							<img src="img/svg/cloud.svg" alt="Vector cloud background">
+						</div>
+						<div class="images__picture images__picture--girl-photo">
+							<img src="img/webp/girlphoto.webp" alt="Smiling girl on a yellow background">
+						</div>
+						<div class="images__picture images__picture--arrow">
+							<img src="img/svg/arrow.svg" alt="Arrow svg">
+						</div>
+						<div class="images__picture images__picture--business-card">
+							<img src="img/svg/businesscard.svg" alt="Business card svg">
+						</div>
+						<div class="images__picture images__picture--curly-arrow">
+							<img src="img/svg/curlyarrow.svg" alt="Image">
+						</div>
+						<div class="images__picture images__picture--laptop">
+							<img src="img/webp/laptop.webp" alt="Laptop on a purple background">
+						</div>
+					</div>
+				</section>
+				<section class="portfolio">
+					<h1 class="portfolio__title">Portfolio</h1>
+					<h2 class="portfolio__subtitle">Latest Work</h2>
+					<ul class="portfolio__list">
+						<li class="portfolio__item">
+							<a href="#">Show All<sup>14</sup></a>
+						</li>
+						<li class="portfolio__item">
+							<a href="#design">Design<sup>6</sup></a>
+						</li>
+						<li class="portfolio__item">
+							<a href="#branding">Branding<sup>4</sup></a>
+						</li>
+						<li class="portfolio__item">
+							<a href="#illustration">Illustration<sup>3</sup></a>
+						</li>
+						<li class="portfolio__item">
+							<a href="#motion">Motion<sup>1</sup></a>
+						</li>
+					</ul>
+					<div class="portfolio__box">
+						<!-- <svg viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5 6L10 0H0L5 6Z" fill="#EF6D58" />
+						</svg> -->
+						<select class="portfolio__select" name="form[select]">
+							<option selected value="Show All">Show All</option>
+							<option value="Design">Design</option>
+							<option value="Branding">Branding</option>
+							<option value="Illustration">Illustration</option>
+							<option value="Motion">Motion</option>
+						</select>
+					</div>
+					<div class="portfolio__column column">
+						<article class="item">
+							<a id="design" href="#" class="column__">
+								<img src="img/13/webp/sofa.webp" alt="Textile, which looks like a silk coverage that turns it into stairs.">
+								<div class="column__text">
+									<div class="column__button">Design</div>
+									<h3 class="column__label">Sofa</h3>
+								</div>
+							</a>
+						</article>
+						<article class="item">
+							<a id="branding" href="#" class="column__">
+								<img src="img/13/webp/keyboard.webp" alt="Room that has an arch and a podium for a mannequin in the middle.">
+								<div class="column__text">
+									<div class="column__button">Branding</div>
+									<h3 class="column__label">KeyBoard</h3>
+								</div>
+							</a>
+						</article>
+						<article class="item">
+							<a id="illustration" href="#" class="column__">
+								<img src="img/13/webp/media.webp" alt="Four cylinder shaped figures.">
+								<div class="column__text">
+									<div class="column__button">Illustration</div>
+									<h3 class="column__label">Work Media</h3>
+								</div>
+							</a>
+						</article>
+						<article class="item">
+							<a id="motion" href="#" class="column__">
+								<img src="img/13/webp/ddone.webp" alt="Three cubes with a different shapes inside">
+								<div class="column__text">
+									<div class="column__button">Motion</div>
+									<h3 class="column__label">DDDone</h3>
+								</div>
+							</a>
+						</article>
+					</div>
+					<div class="button">
+						<a href=" #" class="button__body">Explore More</a>
+					</div>
+				</section>
+				<section class="get-started">
+					<div class="get-started__container">
+						<div class="get-started__items">
+							<div class="get-started__content left">
+								<div class="left__stargift"></div>
+								<h2 class="left__title">Get Started</h2>
+								<h3 class="left__subtitle">We Help Companies Move Faster</h3>
+								<a href="#" class="left__button button"><span>Contact Us</span></a>
+							</div>
+							<div class="get-started__card">
+								<img src="img/13/svg/rectangle.svg" alt="Rectangle svg">
+							</div>
+							<div class="get-started__right">
+								<img src="img/13/webp/girl_01.webp" alt="Girl who's definetely up to some shit">
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="events">
+					<div class="events__top">
+						<h2 class="events__title">Events</h2>
+						<h3 class="events__subtitle">Explore Future Conferences</h3>
+					</div>
+					<div class="events__cards">
+						<article class="events__card">
+							<div class="events__head">
+								<div class="events__day">3</div>
+								<div class="events__month-year">
+									<div class="events__month">November</div>
+									<div class="events__year">2021</div>
+								</div>
+							</div>
+							<div class="events__time">9:00 am – 3:00 pm</div>
+							<div class="events__header">Design Weeks</div>
+							<div class="events__text">Digital agency is a business you hire to outsource your digital.</div>
+							<a href="#" class="events__buttons">Explore Now</a>
+						</article>
+						<article class="events__card">
+							<div class="events__head">
+								<div class="events__day">15</div>
+								<div class="events__month-year">
+									<div class="events__month">November</div>
+									<div class="events__year">2021</div>
+								</div>
+							</div>
+							<div class="events__time">1:00 pm – 8:00 pm</div>
+							<div class="events__header">Interior Design</div>
+							<div class="events__text">Marketing efforts, instead of handling in-house.</div>
+							<a href="#" class="events__buttons">Explore Now</a>
+						</article>
+						<article class="events__card">
+							<div class="events__head">
+								<div class="events__day">2</div>
+								<div class="events__month-year">
+									<div class="events__month">November</div>
+									<div class="events__year">2021</div>
+								</div>
+							</div>
+							<div class="events__time">10:00 am – 2:00 pm</div>
+							<div class="events__header">The F design events</div>
+							<div class="events__text">Provide your business with a variety of digital solutions to promote.</div>
+							<a href="#" class="events__buttons">Explore Now</a>
+						</article>
+					</div>
+					<div class="events__button">
+						<a href="#" class="events__body">Explore More</a>
+					</div>
+				</section>
+				<section class="team">
+					<div class="team__top">
+						<div class="team__head">
+							<h2 class="team__title">Our Team</h2>
+							<h3 class="team__subtitle">Team of Designers and Developers</h3>
+						</div>
+						<div class="team__arrows arrows">
+							<div class="arrows__left"></div>
+							<div class="arrows__right"></div>
+						</div>
+					</div>
+					<div class="team__img-cards">
+						<div class="team__img-card">
+							<div class="team__img team__img">
+								<img src="img/13/webp/azah.webp" alt="Man with a hat slightly smiling at the camera">
+							</div>
+							<div class="team__name">Azah Anyeni</div>
+							<div class="team__position">Designer</div>
+						</div>
+						<div class="team__img-card">
+							<div class="team__img team__img">
+								<img src="img/13/webp/roelof.webp" alt="African man who's doubting your skills">
+							</div>
+							<div class="team__name">Roelof Bekkenenks</div>
+							<div class="team__position">React Developer</div>
+						</div>
+						<div class="team__img-card">
+							<div class="team__img team__img">
+								<img src="img/13/webp/leonardo.webp" alt="Happy girl with a red sweater">
+							</div>
+							<div class="team__name">Leonardo Oliveira</div>
+							<div class="team__position">Illustrator</div>
+						</div>
+						<div class="team__img-card">
+							<div class="team__img team__img">
+								<img src="img/13/webp/izabella.webp" alt="Blonde girl who is looking like a viking warrior">
+							</div>
+							<div class="team__name">Izabella Tabakova</div>
+							<div class="team__position">Product Designer</div>
+						</div>
+					</div>
+					<div class="team__scroll-circles circle">
+						<div class="circle__scroll circle__scroll--left"></div>
+						<div class="circle__scroll"></div>
+						<div class="circle__scroll"></div>
+					</div>
+				</section>
+				<section class="founder">
+					<div class="founder__images">
+						<img src="img/13/webp/ren.webp" alt="Founder of a company">
+					</div>
+					<div class="founder__text">
+						<div class="founder__quotes"></div>
+						<h2 class="founder__label">Founder Words</h2>
+						<div class="founder__quote">Digital agency is a business you hire to outsource your digital marketing efforts</div>
+						<div class="founder__signature">Ren Delan</div>
+						<div class="founder__position">Founder</div>
+					</div>
+				</section>
+				<section class="testimonials">
+					<h2 class="testimonials__title">Testimonials</h2>
+					<h3 class="testimonials__subtitle">What Our Clients Saying</h3>
+					<div class="testimonials__feedbacks feedback">
+						<article class="feedback__item">
+							<div class="feedback__stars">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+							</div>
+							<div class="feedback__text">A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.</div>
+							<div class="feedback__person">
+								<img src="img/jpeg/alan.jpg" alt="A man with sunglasses, showcasing a stylish and relaxed appearance.">
+								<div class="feedback__name">Alan Martí</div>
+								<div class="feedback__signature">Meta Inc.</div>
+							</div>
+						</article>
+						<article class="feedback__item">
+							<div class="feedback__stars">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+							</div>
+							<div class="feedback__text">Provide your business with a variety of digital solutions to promote your product or service online.</div>
+							<div class="feedback__person">
+								<img src="img/jpeg/richardo.jpg" alt="A man wearing glasses and a white shirt sits against a vibrant graffiti wall, showcasing urban art and style.">
+								<div class="feedback__name">Richardo Kann</div>
+								<div class="feedback__signature">Photogram</div>
+							</div>
+						</article>
+						<article class="feedback__item">
+							<div class="feedback__stars">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+							</div>
+							<div class="feedback__text">Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety.</div>
+							<div class="feedback__person">
+								<img src="img/jpeg/graham.jpg" alt="A man with dreadlocks and a hat smiles brightly, radiating positivity and a laid-back attitude.">
+								<div class="feedback__name">Graham Griffiths</div>
+								<div class="feedback__signature">Twitor</div>
+							</div>
+						</article>
+						<article class="feedback__item">
+							<div class="feedback__stars">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+								<img src="img/svg/star19.svg" class="feedback__svg" alt="Feedback stars svg icon">
+							</div>
+							<div class="feedback__text">Promote your product or service online and help you hit your marketing goals and grow your business.</div>
+							<div class="feedback__person">
+								<img src="img/jpeg/maria.jpg" alt="A woman with long blonde hair and striking blue eyes, exuding elegance and confidence in her appearance.">
+								<div class="feedback__name">Maria Trofimova</div>
+								<div class="feedback__signature">Whochat</div>
+							</div>
+						</article>
+						<div class="feedback__button">
+							<button>See All</button>
+						</div>
+					</div>
+				</section>
+				<section class="agency">
+					<div class="agency__title">Agency</div>
+					<div class="agency__menu menu">
+						<div class="menu__name">MENU</div>
+						<ul class="list">
+							<li class="item">
+								<a href="#" class="link">About</a>
+							</li>
+							<li class="item">
+								<a href="#" class="link">Services</a>
+							</li>
+							<li class="item">
+								<a href="#" class="link">Blog</a>
+							</li>
+							<li class="item">
+								<a href="#" class="link">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="agency__service service">
+						<div class="service__name">Service</div>
+						<ul class="list">
+							<li class="item">
+								<a href="#" class="link">Design</a>
+							</li>
+							<li class="item">
+								<a href="#" class="link">Development</a>
+							</li>
+							<li class="item">
+								<a href="#" class="link">Marketing</a>
+							</li>
+							<li class="item">
+								<a href="#" class="link">See More</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer>
+			<section class="footer">
+				<div class="footer__container">
+					<div class="footer__copyright">Copyright © 2022 Laaqiq. All Rights Reserved.</div>
+					<div class="footer__terms">Terms of Use</div>
+					<div class="footer__privacy">Privacy Policy</div>
+				</div>
+			</section>
+		</footer>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+/* google fonts */
+
+/* null */
+
+@import url("reset.css");
+
+/*--------------------*/
+
+/* --------@keyframes---------- */
+
+/* ------------------------- */
+body {
+	background-color: #28293e;
+	color: #ffffff;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+[class*="__container"] {
+	max-width: 1200px;
+	padding-inline: 15px;
+	margin-inline: auto;
+}
+.page {
+	width: 100%;
+}
