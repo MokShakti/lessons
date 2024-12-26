@@ -93,7 +93,9 @@ body {
 }
 .hero__container {
 	display: flex;
-	column-gap: 136px;
+	justify-content: space-between;
+	column-gap: 20px;
+	/* column-gap: 136px; */
 	position: relative;
 }
 .hero__container::before {
@@ -135,13 +137,13 @@ body {
 }
 .hero__title {
 	color: #132238;
-	font-size: 72px;
+	font-size: clamp(2.625rem, 2.025rem + 3vw, 4.5rem);
 	font-weight: 600;
 	line-height: 116.66%;
 }
 .hero__text {
 	color: #556070;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
 	line-height: 133.333%;
 }
 .hero__text,
@@ -150,7 +152,7 @@ p:first-child {
 }
 .hero__text span {
 	color: #132238;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
 	line-height: 24px;
 	background: linear-gradient(to top, #ffc8c8 50%, transparent 50%);
 }
@@ -184,7 +186,7 @@ p:first-child {
 .hero__number {
 	color: #424e60;
 	text-align: center;
-	font-size: 32px;
+	font-size: clamp(1.25rem, 1.01rem + 1.2vw, 2rem);
 	font-weight: 600;
 	line-height: 1.25;
 }
@@ -197,12 +199,15 @@ p:first-child {
 }
 .hero__image {
 	aspect-ratio: 536/636;
+	box-shadow: 0px 24px 116px 0px rgba(43, 56, 76, 0.09);
+	border-radius: 25px;
+	background-color: #ffffff;
+	overflow: hidden;
 }
 .hero__image img {
 	width: 100%;
 	height: 100%;
-	border-radius: 25px;
-	box-shadow: 0px 24px 116px 0px rgba(43, 56, 76, 0.09);
+	object-fit: cover;
 }
 /* --------------PROJECT--------------- */
 .information {
@@ -254,17 +259,18 @@ p:first-child {
 }
 .project__image {
 	aspect-ratio: 424/468;
-}
-.project__image img {
-	width: 100%;
-	height: 100%;
 	border-radius: 10px;
 	border: 1px solid #f0f1f3;
 	background:
 		lightgray -233.367px 12px / 205.425% 124.089% no-repeat,
 		#f0f1f3;
-
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.project__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
 }
 .project__social {
 	display: flex;
@@ -307,13 +313,13 @@ p:first-child {
 }
 .project__title {
 	color: #132238;
-	font-size: 38px;
+	font-size: clamp(1.25rem, 0.89rem + 1.8vw, 2.375rem);
 	font-weight: 600;
 	line-height: 131.579%;
 }
 .project__text {
 	color: #556070;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
 	line-height: 133.333%;
 }
 .project__buttons {
@@ -371,13 +377,13 @@ p:first-child {
 }
 .work__title {
 	color: #132238;
-	font-size: 48px;
+	font-size: clamp(2.375rem, 2.175rem + 1vw, 3rem);
 	font-weight: 600;
 	line-height: 116.667%;
 }
 .work__text {
 	color: #697484;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
 	line-height: 133.333%;
 }
 .work__text,
@@ -444,14 +450,14 @@ p:first-child {
 }
 .portfolio__title {
 	color: #132238;
-	font-size: 48px;
+	font-size: clamp(1.5rem, 1.02rem + 2.4vw, 3rem);
 	font-weight: 600;
 	line-height: 116.667%;
 }
 .portfolio__text {
 	color: #87909d;
 	text-align: center;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
 	line-height: 133.333%;
 	max-width: 577px;
 }
@@ -474,6 +480,7 @@ p:first-child {
 .portfolio__image img {
 	width: 100%;
 	height: 100%;
+	object-fit: contain;
 }
 .portfolio__product {
 	padding: 32px;
@@ -559,14 +566,14 @@ p:first-child {
 .idea__title {
 	color: #fff;
 	text-align: center;
-	font-size: 48px;
+	font-size: clamp(1.875rem, 1.515rem + 1.8vw, 3rem);
 	font-weight: 600;
 	line-height: 116.667%;
 }
 .idea__text {
 	color: #a5acb5;
 	text-align: center;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
 	line-height: 133.333%;
 }
 .idea__button {
@@ -603,7 +610,7 @@ p:first-child {
 .blog__title {
 	color: #132238;
 	text-align: center;
-	font-size: 48px;
+	font-size: clamp(1.875rem, 1.515rem + 1.8vw, 3rem);
 	font-weight: 600;
 	line-height: 116.667%;
 	margin-block-end: 24px;
@@ -611,7 +618,7 @@ p:first-child {
 .blog__text {
 	color: #87909d;
 	text-align: center;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
 	line-height: 144.444%;
 }
 .blog__items {
@@ -630,12 +637,13 @@ p:first-child {
 }
 .blog__image {
 	aspect-ratio: 312/226;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 }
 .blog__image img {
 	width: 100%;
 	height: 100%;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
+	object-fit: contain;
 }
 .blog__comments {
 	padding: 24px;
@@ -648,7 +656,7 @@ p:first-child {
 }
 .blog__info {
 	color: #333;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
 	font-weight: 500;
 	line-height: 133.333%;
 }
@@ -679,6 +687,7 @@ p:first-child {
 	display: flex;
 	justify-content: space-between;
 	column-gap: 10px;
+	align-items: center;
 }
 .user__experience {
 }
@@ -687,14 +696,14 @@ p:first-child {
 }
 .what__title {
 	color: #333;
-	font-size: 48px;
+	font-size: clamp(1.875rem, 1.515rem + 1.8vw, 3rem);
 	font-weight: 600;
 	line-height: 116.667%;
 	margin-block-end: 24px;
 }
 .what__text {
 	color: #87909d;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
 	line-height: 133.333%;
 	margin-block-end: 50px;
 }
@@ -752,7 +761,7 @@ p:first-child {
 .clients__title {
 	color: #132238;
 	text-align: center;
-	font-size: 48px;
+	font-size: clamp(1.875rem, 1.515rem + 1.8vw, 3rem);
 	font-weight: 600;
 	line-height: 116.667%;
 	margin-block-end: 24px;
@@ -760,7 +769,7 @@ p:first-child {
 .clients__text {
 	color: #87909d;
 	text-align: center;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
 	line-height: 133.333%;
 }
 .clients__items {
@@ -798,7 +807,7 @@ p:first-child {
 .testimonial__header h2 {
 	color: #333;
 	text-align: center;
-	font-size: 48px;
+	font-size: clamp(1.875rem, 1.515rem + 1.8vw, 3rem);
 	font-weight: 600;
 	line-height: 116.667%;
 	margin-block-end: 24px;
@@ -876,14 +885,14 @@ p:first-child {
 }
 .address__title {
 	color: #132238;
-	font-size: 38px;
+	font-size: clamp(1.5rem, 1.22rem + 1.4vw, 2.375rem);
 	font-weight: 600;
 	line-height: 131.579%;
 	margin-block-end: 16px;
 }
 .address__text {
 	color: #87909d;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
 	line-height: 133.333%;
 }
 .address__items {
@@ -932,7 +941,7 @@ address {
 }
 .form__text {
 	color: #87909d;
-	font-size: 18px;
+	font-size: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
 	line-height: 133.333%;
 }
 .field {
@@ -1031,7 +1040,7 @@ address {
 }
 .footer__name {
 	color: #fff;
-	font-size: 32px;
+	font-size: clamp(1rem, -1.771rem + 4.57vw, 2rem);
 	font-weight: 600;
 	line-height: 1.25;
 }
@@ -1153,7 +1162,7 @@ address {
 		row-gap: 2.1875rem;
 	}
 	.nav__link {
-		font-size: 1.5625rem;
+		font-size: clamp(1.188rem, 1.067rem + 0.6vw, 1.563rem);
 		padding: 0;
 		color: #ffffff;
 	}
