@@ -84,7 +84,6 @@ body {
 /* ------------------------------------ */
 
 /* ----------------HERO---------------- */
-
 .hero {
 	padding-block-start: 7.875rem;
 	padding-block-end: 106px;
@@ -94,6 +93,7 @@ body {
 .hero__container {
 	display: grid;
 	row-gap: clamp(1.25rem, 0.056rem + 5.97vw, 3.75rem);
+	position: relative;
 	/* display: flex;
 	justify-content: space-between;
 	column-gap: 20px;
@@ -126,15 +126,13 @@ body {
 	filter: blur(300px);
 }
 .hero__section {
-	/* flex: 0 1 50%; */
-	flex-basis: 648px;
 	align-content: flex-end;
 }
 .hero__info {
 	display: flex;
 	flex-direction: column;
 	row-gap: 24px;
-	margin-block-end: 142px;
+	margin-block-end: clamp(1.25rem, -21.625rem + 36.97vw, 8.875rem);
 }
 .hero__title {
 	color: #132238;
