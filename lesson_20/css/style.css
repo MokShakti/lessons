@@ -433,12 +433,6 @@ p:first-child {
 	background: #fff;
 	box-shadow: 32px 32px 124px 0px rgba(43, 56, 76, 0.1);
 }
-/* .block__item:nth-child(odd) {
-	margin-block-end: 24px;
-}
-.block__item:nth-child(even) {
-	margin-block-start: 24px;
-} */
 .block__image {
 	margin-block-end: 32px;
 }
@@ -488,9 +482,7 @@ p:first-child {
 	justify-content: center;
 	align-items: center;
 	row-gap: 24px;
-	/* text-align: center; */
 	margin-block-end: 70px;
-	/* flex-basis: 43.71212%; */
 }
 .portfolio__title {
 	color: #132238;
@@ -508,6 +500,7 @@ p:first-child {
 .portfolio__items {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(376px, 1fr));
+	/* grid-template-columns: repeat(3, 1fr); */
 	column-gap: 24px;
 	row-gap: 24px;
 	margin-block-end: 50px;
