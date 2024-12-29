@@ -393,10 +393,14 @@ p:first-child {
 	padding-block-end: clamp(3.125rem, 1.325rem + 9vw, 8.75rem);
 }
 .work__container {
-	display: flex;
+	/* display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	column-gap: 20px;
+	column-gap: 20px; */
+	display: grid;
+	grid-template-columns: 0.81635fr 1.22495fr;
+	column-gap: clamp(1.25rem, -21.813rem + 37.27vw, 8.938rem);
+	justify-content: space-between;
 }
 .work__block {
 	display: flex;
