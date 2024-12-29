@@ -85,8 +85,8 @@ body {
 
 /* ----------------HERO---------------- */
 .hero {
-	padding-block-start: 7.875rem;
-	padding-block-end: 106px;
+	padding-block-start: clamp(2.5rem, 0.78rem + 8.6vw, 7.875rem);
+	padding-block-end: clamp(1.25rem, -0.47rem + 8.6vw, 6.625rem);
 }
 .hero::before {
 }
@@ -166,14 +166,13 @@ p:first-child {
 	text-transform: capitalize;
 }
 .hero__analysis {
-	display: flex;
-	column-gap: 3px;
+	display: grid;
+	row-gap: 3px;
 }
 .hero__item {
 	display: flex;
 	flex-direction: column;
 	row-gap: 8px;
-	flex-basis: 212px;
 	border-radius: 6px;
 	border: 1px solid #ffffff;
 	background: rgba(237, 216, 255, 0.5);
@@ -208,10 +207,18 @@ p:first-child {
 	height: 100%;
 	object-fit: cover;
 }
+
+/* -------------HERO MEDIA-------------- */
 @media (min-width: 990px) {
 	.hero__container {
 		grid-template-columns: 1.2fr 1fr;
 		column-gap: clamp(1.875rem, -0.245rem + 10.6vw, 8.5rem);
+	}
+}
+@media (min-width: 500px) {
+	.hero__analysis {
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 3px;
 	}
 }
 /* --------------PROJECT--------------- */
@@ -220,17 +227,20 @@ p:first-child {
 .information__links {
 }
 .project {
-	padding-block-start: 106px;
+	padding-block-start: clamp(1.25rem, -0.47rem + 8.6vw, 6.625rem);
 }
 .project__container {
 	position: relative;
-	padding: 112px;
+	padding: clamp(1.25rem, -0.59rem + 9.2vw, 7rem);
 	border-radius: 16px;
 	background: #fff;
 	box-shadow: 0px 36px 105px 0px rgba(43, 56, 76, 0.1);
-	display: flex;
-	justify-content: space-between;
-	column-gap: 10px;
+	display: grid;
+	justify-items: center;
+	row-gap: 50px;
+	/* 32.1212%; 424/1320 */
+	/* 10.303%; 136/1320 */
+	/* 40.6061%; 536/1320 */
 }
 .project__container::before {
 	content: "";
@@ -302,9 +312,9 @@ p:first-child {
 .project__instagram {
 }
 .project__linkedin {
-	background-color: #a53dff;
+	/* background-color: #a53dff;
 	border-radius: 4px;
-	box-shadow: 0px 12px 64px 0px rgba(28, 25, 25, 0.12);
+	box-shadow: 0px 12px 64px 0px rgba(28, 25, 25, 0.12); */
 }
 .project__behance {
 	align-self: flex-end;
@@ -357,15 +367,30 @@ p:first-child {
 	width: 24px;
 	height: 24px;
 }
+/* ------------PROJECT MEDIA------------- */
+@media (min-width: 800px) {
+	.project__container {
+		grid-template-columns: 0.79104fr 1.26fr;
+		column-gap: clamp(2.5rem, -15.5rem + 29.09vw, 8.5rem);
+	}
+}
+@media (max-width: 800px) {
+	.project__socials {
+		order: 2;
+	}
+	.project__info {
+		order: 1;
+	}
+}
 /* ----------------WORK----------------- */
 
 .work {
+	margin-block-start: -150px;
 }
 .work__process {
 	background: #f0f1f3;
-	margin-block-start: -150px;
-	padding-block-start: 248px;
-	padding-block-end: 140px;
+	padding-block-start: clamp(12.5rem, 11.54rem + 4.8vw, 15.5rem);
+	padding-block-end: clamp(3.125rem, 1.325rem + 9vw, 8.75rem);
 }
 .work__container {
 	display: flex;
@@ -438,8 +463,8 @@ p:first-child {
 }
 /* --------------PORTFOLIO-------------- */
 .portfolio {
-	padding-block-start: 100px;
-	padding-block-end: 50px;
+	padding-block-start: clamp(3.125rem, 2.125rem + 5vw, 6.25rem);
+	padding-block-end: clamp(1.563rem, 1.063rem + 2.5vw, 3.125rem);
 }
 .portfolio__container {
 }
@@ -603,7 +628,7 @@ p:first-child {
 
 .blog {
 	padding-block-start: 50px;
-	padding-block-end: 100px;
+	padding-block-end: clamp(3.125rem, 2.125rem + 5vw, 6.25rem);
 }
 .blog__container {
 }
@@ -685,7 +710,7 @@ p:first-child {
 /* ---------USER EXPERIENCE------------ */
 
 .user {
-	padding-block: 150px;
+	padding-block: clamp(3.125rem, 1.125rem + 10vw, 9.375rem);
 	background: #f0f1f3;
 }
 .user__container {
@@ -753,7 +778,7 @@ p:first-child {
 /* ------------CLIENTS----------------- */
 
 .clients {
-	padding-block-start: 100px;
+	padding-block-start: clamp(3.125rem, 2.125rem + 5vw, 6.25rem);
 	padding-block-end: 50px;
 }
 .clients__container {
@@ -800,8 +825,8 @@ p:first-child {
 /* -------------TESTIMONIAL------------- */
 
 .testimonial {
-	padding-block-start: 50px;
-	padding-block-end: 100px;
+	padding-block-start: clamp(1.25rem, 0.65rem + 3vw, 3.125rem);
+	padding-block-end: clamp(3.125rem, 2.125rem + 5vw, 6.25rem);
 }
 .testimonial__container {
 	display: flex;
