@@ -231,7 +231,6 @@ p:first-child {
 }
 .project__container {
 	position: relative;
-	padding: clamp(1.25rem, -0.59rem + 9.2vw, 7rem);
 }
 .project__body {
 	border-radius: 16px;
@@ -240,8 +239,7 @@ p:first-child {
 	display: grid;
 	justify-items: center;
 	row-gap: 50px;
-	max-width: 1096px;
-	padding: 112px;
+	padding: clamp(1.25rem, -0.59rem + 9.2vw, 7rem);
 	/* 38.6861%; 424/1096 */
 	/* 12.4088%; 136/1096 */
 	/* 48.9051%; 536/1096 */
@@ -315,7 +313,6 @@ p:first-child {
 .project__info {
 	display: flex;
 	flex-direction: column;
-	flex-basis: 50%;
 	justify-content: center;
 	row-gap: 32px;
 }
@@ -332,6 +329,9 @@ p:first-child {
 }
 .project__buttons {
 	display: flex;
+	/* display: grid;
+	grid-template-columns: 1fr 1.69047fr; */
+	/* (0,59154) */
 	column-gap: 16px;
 }
 .project__button {
@@ -373,6 +373,12 @@ p:first-child {
 	}
 	.project__info {
 		order: 1;
+	}
+}
+@media (max-width: 430px) {
+	.project__buttons {
+		flex-direction: column;
+		row-gap: 16px;
 	}
 }
 /* ----------------WORK----------------- */
@@ -421,7 +427,7 @@ p:first-child {
 .block__item {
 	display: flex;
 	flex-direction: column;
-	padding: 32px;
+	padding: clamp(0.625rem, 0.185rem + 2.2vw, 2rem);
 	border-radius: 12px;
 	background: #fff;
 	box-shadow: 32px 32px 124px 0px rgba(43, 56, 76, 0.1);
@@ -965,6 +971,8 @@ p:first-child {
 .form {
 }
 .form__container {
+}
+.form__body {
 	display: grid;
 	row-gap: 40px;
 	padding: clamp(1.25rem, -0.11rem + 6.8vw, 5.5rem);
@@ -1121,7 +1129,7 @@ address {
 /* ------------FORM MEDIA--------------- */
 
 @media (min-width: 800px) {
-	.form__container {
+	.form__body {
 		grid-template-columns: 1fr 1.16424fr;
 		column-gap: clamp(1.25rem, -6.731rem + 15.96vw, 6.438rem);
 	}
