@@ -325,6 +325,18 @@ p:first-child {
 .project__linkedin,
 .project__behance {
 	padding: 15px;
+	display: flex;
+	align-items: center;
+	aspect-ratio: 18/18;
+}
+.project__facebook img,
+.project__dribbble img,
+.project__instagram img,
+.project__linkedin img,
+.project__behance img {
+	width: 18px;
+	height: 18px;
+	object-fit: contain;
 }
 .project__behance {
 	align-self: flex-end;
@@ -1318,5 +1330,7 @@ address {
 	.nav__a:hover::after {
 		width: 100%;
 		transition: 0.3s;
+	}
+	.portfolio__item:hover {
 	}
 }
