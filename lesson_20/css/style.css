@@ -64,6 +64,23 @@ body {
 	font-weight: 500;
 	line-height: 1.5;
 }
+.nav__a {
+	position: relative;
+	text-decoration: none;
+	color: #282c34;
+}
+.nav__a::after {
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute;
+	content: "";
+	bottom: 0;
+	display: block;
+	width: 0;
+	height: 1px;
+	background: #282c34;
+	transition: 0.3s;
+}
 .header__buttons {
 	justify-self: end;
 }
@@ -75,11 +92,23 @@ body {
 	padding: 0.75rem 1.5rem;
 	border-radius: 0.25rem;
 	background: #a53dff;
+	transition: 0.6s;
 }
 .icon-menu {
 	display: none;
 }
-/* ------------------------------------ */
+/* ------------HEADER HOVER------------- */
+
+@media (any-hover: hover) {
+	.header__button:hover {
+		transform: scale(0.9);
+		transition: 0.6s;
+	}
+	.nav__a:hover::after {
+		width: 100%;
+		transition: 0.3s;
+	}
+}
 
 /* ----------------HERO---------------- */
 .hero {
@@ -90,10 +119,6 @@ body {
 	display: grid;
 	row-gap: clamp(1.25rem, 0.056rem + 5.97vw, 3.75rem);
 	position: relative;
-	/* display: flex;
-	justify-content: space-between;
-	column-gap: 20px;
-	position: relative; */
 }
 .hero__container::before {
 	content: "";
@@ -160,6 +185,7 @@ p:first-child {
 	font-weight: 600;
 	line-height: 1.5;
 	text-transform: capitalize;
+	transition: 0.6s;
 }
 .hero__analysis {
 	display: grid;
@@ -217,6 +243,7 @@ p:first-child {
 		column-gap: 3px;
 	}
 }
+
 /* --------------PROJECT--------------- */
 .project {
 	padding-block-start: clamp(1.25rem, -0.47rem + 8.6vw, 6.625rem);
@@ -333,6 +360,7 @@ p:first-child {
 	padding: 12px 24px;
 	border-radius: 4px;
 	background: #a53dff;
+	transition: 0.6s;
 }
 .project__cv {
 	color: #a53dff;
@@ -345,6 +373,7 @@ p:first-child {
 	border-radius: 4px;
 	border: 1px solid #a53dff;
 	background: #fff;
+	transition: 0.6s;
 }
 .project__cv::before {
 	content: "";
@@ -1008,7 +1037,7 @@ address {
 	column-gap: 12px;
 }
 .address__image {
-	padding: 15px;
+	padding: clamp(0.625rem, 0.525rem + 0.5vw, 0.938rem);
 }
 .address__image:nth-child(3) {
 	align-self: flex-end;
@@ -1275,5 +1304,19 @@ address {
 @media (max-width: 415px) {
 	.nav__button {
 		display: none;
+	}
+}
+/* --------------ANY HOVER-------------- */
+@media (any-hover: hover) {
+	.header__button:hover,
+	.hero__button:hover,
+	.project__button:hover,
+	.project__cv:hover {
+		transform: scale(0.9);
+		transition: 0.6s;
+	}
+	.nav__a:hover::after {
+		width: 100%;
+		transition: 0.3s;
 	}
 }
