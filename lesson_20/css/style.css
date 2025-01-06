@@ -903,9 +903,11 @@ p:first-child {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: 0.4s;
 }
 .clients__item svg {
 	width: 140px;
+	object-fit: contain;
 }
 .clients__item:nth-child(4) {
 	align-self: flex-end;
@@ -1046,6 +1048,7 @@ address {
 .address__item svg {
 	width: 48px;
 	height: 48px;
+	object-fit: contain;
 }
 .address__socials {
 	display: flex;
@@ -1054,6 +1057,16 @@ address {
 }
 .address__image {
 	padding: clamp(0.625rem, 0.525rem + 0.5vw, 0.938rem);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	aspect-ratio: 1;
+	transition: 0.3s;
+}
+.address__image svg {
+	width: 18px;
+	height: 18px;
+	object-fit: contain;
 }
 .address__image:nth-child(3) {
 	align-self: flex-end;
@@ -1343,14 +1356,17 @@ address {
 		transform: scale(1.1);
 		transition: 0.4s;
 	}
-	.project__link-social:hover {
+	.project__link-social:hover,
+	.address__image:hover {
 		border-radius: 4px;
 		background: #a53dff;
 		box-shadow: 0px 12px 64px 0px rgba(28, 25, 25, 0.12);
 		transition: 0.3s;
 	}
 	.project__link-social:hover path,
-	.project__link-social:focus path {
+	.project__link-social:focus path,
+	.address__image:hover path,
+	.address__image:focus path {
 		fill: #fff;
 	}
 	.portfolio__button:hover {
@@ -1369,8 +1385,15 @@ address {
 		transform: will-change;
 		box-shadow: 0px 32px 96px 0px rgba(28, 25, 25, 0.16);
 	}
-	.clients__item:hover path,
-	.clients__item:focus path:not(:nth-child(3)) {
+	.clients__item:hover path:not(.clients__item-fill) {
 		fill: #000000;
+		transition: 0.4s;
+	}
+	.address__item:hover {
+		border-radius: 10px;
+		background: #fff;
+		box-shadow: 0px 12px 64px 0px rgba(28, 25, 25, 0.12);
+	}
+	.address__image:hover {
 	}
 }
