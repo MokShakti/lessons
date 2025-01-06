@@ -458,6 +458,16 @@ p:first-child {
 }
 .block__image {
 	margin-block-end: 32px;
+	display: flex;
+	border-radius: 6px;
+	padding: 20px;
+	background-color: rgba(237, 216, 255, 0.5);
+	aspect-ratio: 1;
+}
+.block__image svg {
+	width: 32px;
+	height: 32px;
+	object-fit: contain;
 }
 .block__item h3 {
 	color: #132238;
@@ -466,7 +476,7 @@ p:first-child {
 	line-height: 1.2;
 	margin-block-end: 12px;
 }
-.block__item p {
+.block__text {
 	color: #556070;
 	line-height: 1.5;
 }
@@ -1153,8 +1163,6 @@ address {
 .form__button:hover::after {
 	transform: rotate(180deg);
 	transition: 0.7s;
-	width: 24px;
-	height: 24px;
 	transition: all 0.7s;
 }
 /* ------------FORM MEDIA--------------- */
