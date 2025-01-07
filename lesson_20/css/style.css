@@ -104,10 +104,6 @@ body {
 		transform: scale(0.9);
 		transition: 0.6s;
 	}
-	.nav__a:hover::after {
-		width: 100%;
-		transition: 0.3s;
-	}
 }
 
 /* ----------------HERO---------------- */
@@ -463,6 +459,8 @@ p:first-child {
 	padding: 20px;
 	background-color: rgba(237, 216, 255, 0.5);
 	aspect-ratio: 1;
+	width: fit-content;
+	transition: 0.4s;
 }
 .block__image svg {
 	width: 32px;
@@ -797,6 +795,7 @@ p:first-child {
 	height: 8px;
 	background: #c3c7ce;
 	border-radius: 50%;
+	transition: 0.4s;
 }
 .blog__controller--01 {
 	width: 30px;
@@ -1000,6 +999,7 @@ p:first-child {
 	height: 8px;
 	background: #c3c7ce;
 	border-radius: 50%;
+	transition: 0.4s;
 }
 .testimonial__controller--01 {
 	width: 30px;
@@ -1208,9 +1208,25 @@ address {
 	column-gap: 24px;
 	row-gap: 24px;
 }
-.link {
+.footer__list li {
 	color: #f0f1f3;
 	line-height: 1.5;
+}
+.footer__a {
+	position: relative;
+	text-decoration: none;
+}
+.footer__a::after {
+	left: 50%;
+	transform: translate(-50%);
+	position: absolute;
+	content: "";
+	bottom: 0;
+	display: block;
+	width: 0;
+	height: 1px;
+	background: #fff;
+	transition: 0.3s;
 }
 .footer__copyright {
 	color: #fff;
@@ -1355,7 +1371,8 @@ address {
 		transform: scale(0.9);
 		transition: 0.6s;
 	}
-	.nav__a:hover::after {
+	.nav__a:hover::after,
+	.footer__a:hover::after {
 		width: 100%;
 		transition: 0.3s;
 	}
@@ -1374,7 +1391,8 @@ address {
 	.project__link-social:hover path,
 	.project__link-social:focus path,
 	.address__image:hover path,
-	.address__image:focus path {
+	.address__image:focus path,
+	.block__image:hover path {
 		fill: #fff;
 	}
 	.portfolio__button:hover {
@@ -1403,5 +1421,17 @@ address {
 		box-shadow: 0px 12px 64px 0px rgba(28, 25, 25, 0.12);
 	}
 	.address__image:hover {
+	}
+	.block__image:hover {
+		background-color: #a53dff;
+		transition: 0.4s;
+	}
+	.blog__controller:hover,
+	.testimonial__controller:hover {
+		width: 30px;
+		height: 8px;
+		border-radius: 100px;
+		background: #210c33;
+		transition: 0.4s;
 	}
 }
