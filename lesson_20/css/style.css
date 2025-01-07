@@ -1008,6 +1008,10 @@ p:first-child {
 	background: #210c33;
 }
 /* ----------------FORM----------------- */
+.form {
+	position: relative;
+	z-index: 2;
+}
 
 .form__body {
 	display: grid;
@@ -1181,7 +1185,7 @@ address {
 	margin-block-start: -60px;
 	padding-block-start: clamp(5rem, 3.4rem + 8vw, 10rem);
 	padding-block-end: 50px;
-	z-index: -1;
+	/* z-index: -1; */
 }
 .footer__container {
 	display: flex;
