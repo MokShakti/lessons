@@ -298,9 +298,9 @@ p:first-child {
 	aspect-ratio: 424/468;
 	border-radius: 0.625rem;
 	border: 0.0625rem solid #f0f1f3;
-	background:
+	/* background-color:
 		lightgray -14.5854rem 0.75rem / 205.425% 124.089% no-repeat,
-		#f0f1f3;
+		#f0f1f3; */
 	box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
 }
 .project__image img {
