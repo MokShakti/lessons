@@ -855,7 +855,6 @@ p:first-child {
 	background: #fff;
 	box-shadow: 0rem 2rem 6rem 0rem rgba(28, 25, 25, 0.16);
 	transition: 0.2s;
-	transform: will-change;
 	border-left: 0.3125rem solid transparent;
 }
 .user__item:not(:last-child) {
@@ -1417,7 +1416,7 @@ address {
 		border-left: 0.3125rem solid #a53dff;
 		transition: 0.2s;
 		transform: scale(1.1);
-		/* transform: will-change; */
+		will-change: transform;
 		box-shadow: 0rem 2rem 6rem 0rem rgba(28, 25, 25, 0.16);
 	}
 	.clients__item:hover path:not(.clients__fill) {
