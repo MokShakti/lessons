@@ -1,0 +1,220 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700&display=swap");
+/* null */
+/*Null*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+:root {
+  --colorTitle: #fff;
+  --bg: #141414;
+  --bg-02: #000;
+  --menuBorder: #1f1f1f;
+  --menuBg: #0f0f0f;
+  --colorButton: #e50000;
+  --mainText: #999;
+  --secondaryText: #bfbfbf;
+  --font-family: "Manrope", sans-serif;
+  --red-50: #f00;
+  --red-55: #ff1a1a;
+  --red-60: #f33;
+  --red-80: #f99;
+  --red-90: #fcc;
+  --red-95: #ffe5e5;
+  --red-99: #fffafa;
+  --black-10: #1a1a1a;
+  --black-15: #262626;
+  --black-20: #333;
+  --black-25: #404040;
+  --black-30: #4d4d4d;
+  --grey-65: #a6a6a6;
+  --grey-70: #b3b3b3;
+  --grey-90: #e4e4e7;
+  --grey-95: #f1f1f3;
+  --grey-97: #f7f7f8;
+  --grey-99: #fcfcfd;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg);
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 103.5rem;
+  padding-inline: 0.9375rem;
+  margin-inline: auto;
+}
+
+.page {
+  width: 100%;
+}
+
+/* ----------------------------------- */
+.header__container {
+  min-height: 7.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.625rem;
+     -moz-column-gap: 0.625rem;
+          column-gap: 0.625rem;
+}
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.1875rem;
+     -moz-column-gap: 0.1875rem;
+          column-gap: 0.1875rem;
+}
+.header__logo img {
+  aspect-ratio: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2.25rem;
+     -moz-column-gap: 2.25rem;
+          column-gap: 2.25rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.header__search {
+  width: 1.59375rem;
+  height: 1.59375rem;
+}
+.header__notification {
+  width: 1.471875rem;
+  height: 1.59375rem;
+}
+.nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 0.375rem;
+     -moz-column-gap: 0.375rem;
+          column-gap: 0.375rem;
+  padding: 0.625rem 2.5rem;
+  border-radius: 12px;
+  border: 0.25rem solid var(--menuBorder);
+  background: var(--menuBg);
+}
+.nav__a {
+  color: var(--secondaryText);
+  font-size: 1.125rem;
+  line-height: 1.5;
+  padding: 0.875rem 1.5rem;
+}
