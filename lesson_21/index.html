@@ -54,7 +54,7 @@
 				<div class="hero__container">
 					<div class="hero__body">
 						<div class="hero__video">
-							<video src="video/avengers.webm" poster="img/webp/hero-image.webp"></video>
+							<video id="video" src="video/avengers.webm" poster="img/webp/hero-image.webp"></video>
 						</div>
 						<div class="hero__content">
 							<div class="hero__title">
@@ -64,7 +64,7 @@
 								<p>With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.</p>
 							</div>
 							<div class="hero__button">
-								<button type="button" class="hero__play">Play Now</button>
+								<button id="play" type="button" class="hero__play">Play Now</button>
 								<ul class="hero__buttons">
 									<li>
 										<button type="button" class="hero__icon">
@@ -114,18 +114,28 @@
 			<div class="main__wrapper">
 				<div class="main__container">
 					<div class="main__body">
+						<a href="#" class="main__movies" id="movies&shows">Movies</a>
 						<section class="genres">
 							<div class="genres__body">
-								<a href="#" class="genres__movies" id="movies&shows">Movies</a>
 								<div class="genres__title">
 									<h2>Our Genres</h2>
 									<div class="genres__controllers">
-										<div class="genres__arrow"></div>
-										<div class="genres__scroller genres__scroller--active"></div>
-										<div class="genres__scroller"></div>
-										<div class="genres__scroller"></div>
-										<div class="genres__scroller"></div>
-										<div class="genres__arrow"></div>
+										<div class="genres__arrow">
+											<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M18.75 9L1.25 9M1.25 9L9.125 16.875M1.25 9L9.125 1.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
+										<div class="genres__scrollers">
+											<div class="genres__scroller genres__scroller--active"></div>
+											<div class="genres__scroller"></div>
+											<div class="genres__scroller"></div>
+											<div class="genres__scroller"></div>
+										</div>
+										<div class="genres__arrow">
+											<svg viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.75 1.25L22.5 10M22.5 10L13.75 18.75M22.5 10H1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+											</svg>
+										</div>
 									</div>
 								</div>
 								<ul class="genres__cards">
@@ -271,6 +281,155 @@
 									</li>
 								</ul>
 							</div>
+						</section>
+						<section class="popular">
+							<div class="popular__title">
+								<h2>Popular Top 10 In Genres</h2>
+								<div class="popular__controllers">
+									<div class="popular__arrow">
+										<svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M18.75 9L1.25 9M1.25 9L9.125 16.875M1.25 9L9.125 1.125" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</div>
+									<div class="popular__scrollers">
+										<div class="popular__scroller popular__scroller--active"></div>
+										<div class="popular__scroller"></div>
+										<div class="popular__scroller"></div>
+										<div class="popular__scroller"></div>
+									</div>
+									<div class="popular__arrow">
+										<svg viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M13.75 1.25L22.5 10M22.5 10L13.75 18.75M22.5 10H1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</div>
+								</div>
+							</div>
+							<ul class="popular__cards">
+								<li class="popular__card">
+									<article>
+										<a href="#">
+											<div class="popular__images">
+												<div class="popular__image">
+													<img src="img/webp/actioncut/freedom.webp" alt="Movie poster for Freedom, featuring Brad Cole, showcasing dramatic visuals and captivating design elements.">
+												</div>
+												<div class="popular__image">
+													<img src="img/webp/actioncut/baieti-rai.webp" alt="A traditional dish of baati served with spicy rai and a side of vita, showcasing vibrant colors and rich textures.">
+												</div>
+												<div class="popular__image">
+													<img src="img/webp/actioncut/jeckie-chan.webp" alt="A man stands confidently, holding a gun, showcasing a serious expression in a tense atmosphere.">
+												</div>
+												<div class="popular__image">
+													<img src="img/webp/actioncut/iron-man.webp" alt="Movie poster for Iron Man 3 featuring the iconic superhero in a dynamic pose against a dramatic background.">
+												</div>
+											</div>
+											<div class="popular__bottom">
+												<div class="popular__label">
+													<div class="popular__top">Top 10 In</div>
+													<h3>Action</h3>
+												</div>
+												<div class="popular__pointer">
+													<svg viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M13.75 1.25L22.5 10M22.5 10L13.75 18.75M22.5 10H1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="popular__card">
+									<article>
+										<a href="#">
+											<div class="popular__images">
+												<div class="popular__image">
+													<img src="img/webp/adventurecut/archer-cut.webp" alt="A woman confidently holds a bow and arrow on the cover of Archer, embodying strength and focus.">
+												</div>
+												<div class="popular__image">
+													<img src="img/webp/adventurecut/jungle.webp" alt="Jungle Cruise movie poster featuring lush greenery, a boat, and adventurous characters ready for an exciting journey.">
+												</div>
+												<div class="popular__image">
+													<img src="img/webp/adventurecut/immortal.webp" alt="A captivating scene from Immortals 3, showcasing the powerful and enigmatic figures of the immortals in action.">
+												</div>
+												<div class="popular__image">
+													<img src="img/webp/adventurecut/snow-white.webp" alt="Movie poster for The Dark Knight Rises, featuring a dark, brooding atmosphere and iconic imagery of Batman.">
+												</div>
+											</div>
+											<div class="popular__bottom">
+												<div class="popular__label">
+													<div class="popular__top">Top 10 In</div>
+													<h3>Adventure</h3>
+												</div>
+												<div class="popular__pointer">
+													<svg viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M13.75 1.25L22.5 10M22.5 10L13.75 18.75M22.5 10H1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="popular__card">
+									<article>
+										<a href="#">
+											<div class="popular__images">
+												<div class="popular__image">
+													<img src="img/webp/comedycut/intelligence-cut.webp" alt="A visual representation of central intelligence, showcasing interconnected data networks and analytical processes.">
+												</div>
+												<div class="popular__image">
+													<img src="img/webp/comedycut/pagal-panti.webp" alt="A detailed review of a regalant movie, highlighting its themes, performances, and overall impact on the audience.">
+												</div>
+												<div class="popular__image">
+													<img src="img/webp/comedycut/jaanu.webp" alt="A detailed review of the movie Jaanu, highlighting its themes, performances, and overall impact on the audience.">
+												</div>
+												<div class="popular__image">
+													<img src="img/webp/comedycut/maids.webp" alt="A vibrant poster featuring the bridesmaids, showcasing their elegant dresses and joyful expressions at a wedding celebration.">
+												</div>
+											</div>
+											<div class="popular__bottom">
+												<div class="popular__label">
+													<div class="popular__top">Top 10 In</div>
+													<h3>Comedy</h3>
+												</div>
+												<div class="popular__pointer">
+													<svg viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M13.75 1.25L22.5 10M22.5 10L13.75 18.75M22.5 10H1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</a>
+									</article>
+								</li>
+								<li class="popular__card">
+									<article>
+										<a href="#">
+											<div class="popular__images">
+												<div class="popular__image">
+													<img src="img/webp/dramacut/dark-society.webp" alt="A logo of the dark society featuring a man silhouetted against a city skyline at dusk.">
+												</div>
+												<div class="popular__image">
+													<img src="img/webp/dramacut/black-man.webp" alt="Movie poster for The Black Man, featuring striking visuals and bold typography that captures the film's essence.">
+												</div>
+												<div class="popular__image">
+													<img src="img/webp/dramacut/the-hole.webp" alt="The Hole movie poster showcasing a captivating design that hints at themes of suspense and psychological tension.">
+												</div>
+												<div class="popular__image">
+													<img src="img/webp/dramacut/tenet.webp" alt="Two movie posters for Tenet, showcasing dynamic visuals and intriguing themes from the film.">
+												</div>
+											</div>
+											<div class="popular__bottom">
+												<div class="popular__label">
+													<div class="popular__top">Top 10 In</div>
+													<h3>Drama</h3>
+												</div>
+												<div class="popular__pointer">
+													<svg viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M13.75 1.25L22.5 10M22.5 10L13.75 18.75M22.5 10H1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</div>
+											</div>
+										</a>
+									</article>
+								</li>
+							</ul>
 						</section>
 					</div>
 				</div>
