@@ -528,6 +528,7 @@ body {
 
 .popular {
 	padding-block-start: toRem(50);
+	padding-block-end: toRem(50);
 	// .popular__title
 	&__title {
 		@extend .genres__title;
@@ -580,6 +581,7 @@ body {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			border-radius: toRem(4);
 		}
 	}
 	// .popular__bottom
@@ -588,11 +590,11 @@ body {
 		align-items: center;
 		justify-content: space-between;
 		column-gap: toRem(5);
+		position: relative;
+		z-index: 2;
 	}
 	// .popular__label
 	&__label {
-		position: relative;
-		z-index: 2;
 		h3 {
 			color: var(--colorTitle);
 			font-size: toRem(20);
@@ -603,6 +605,7 @@ body {
 	// .popular__pointer
 	&__pointer {
 		@extend .genres__pointer;
+		align-self: center;
 	}
 	// .popular__top
 	&__top {
@@ -615,5 +618,88 @@ body {
 		display: inline-flex;
 		align-self: flex-start;
 		margin-block-end: toRem(4);
+	}
+}
+
+/*----------TRENDING----------*/
+
+.trending {
+	padding-block-start: toRem(50);
+	// .trending__body
+	&__body {
+	}
+	// .trending__title
+	&__title {
+		@extend .genres__title;
+	}
+	// .trending__controllers
+	&__controllers {
+		@extend .genres__controllers;
+	}
+	// .trending__arrow
+	&__arrow {
+		@extend .genres__arrow;
+		svg {
+			width: toRem(18);
+			height: toRem(18);
+		}
+	}
+	// .trending__scrollers
+	&__scrollers {
+		@extend .genres__scrollers;
+	}
+	// .trending__scroller
+	&__scroller {
+		@extend .genres__scroller;
+		// .trending__scroller--active
+		&--active {
+			@extend .genres__scroller--active;
+		}
+	}
+	// .trending__cards
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		column-gap: toRem(20);
+	}
+	// .trending__card
+	&__card {
+		padding: toRem(20);
+		border-radius: toRem(12);
+		border: toRem(1) solid var(--heroBorder);
+		background: var(--cardsBorder);
+	}
+	// .trending__images
+	&__images {
+		margin-block-end: toRem(20);
+	}
+	// .trending__image
+	&__image {
+		aspect-ratio: 243/281;
+		border-radius: toRem(12);
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: toRem(12);
+		}
+	}
+	// .trending__info
+	&__info {
+	}
+	// .trending__time
+	&__time {
+		color: var(--mainText);
+		font-weight: 500;
+		line-height: 1.5;
+		&::before {
+			content: "";
+			background-image: url("..img/time.svg");
+			width: toRem(19);
+			height: toRem(19);
+		}
+	}
+	// .trending__reviews
+	&__reviews {
 	}
 }
