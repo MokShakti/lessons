@@ -397,12 +397,6 @@ body {
 
 /*------------GENRES-----------*/
 
-.title {
-	color: var(--colorTitle);
-	@include adaptiveValue("font-size", 38, 24);
-	font-weight: 700;
-	line-height: 1.5;
-}
 [class*="__head"] {
 	display: flex;
 	justify-content: space-between;
@@ -410,26 +404,21 @@ body {
 	align-items: center;
 	margin-block-end: toRem(50);
 }
-
-.genres {
-	padding-block-end: toRem(50);
-	// .genres__container
-	&__container {
-	}
-	// .genres__body
-	&__body {
-	}
-	// .genres__controllers
-	&__controllers {
-		display: flex;
-		border-radius: toRem(12);
-		border: toRem(1) solid var(--menuBorder);
-		background: var(--menuBg);
-		padding: toRem(16);
-		align-items: center;
-		column-gap: toRem(16);
-	}
-	// .genres__arrow
+.title {
+	color: var(--colorTitle);
+	@include adaptiveValue("font-size", 38, 24);
+	font-weight: 700;
+	line-height: 1.5;
+}
+.controllers {
+	display: flex;
+	border-radius: toRem(12);
+	border: toRem(1) solid var(--menuBorder);
+	background: var(--menuBg);
+	padding: toRem(16);
+	align-items: center;
+	column-gap: toRem(16);
+	// .controllers__arrow
 	&__arrow {
 		aspect-ratio: 56/56;
 		padding: toRem(14);
@@ -441,13 +430,13 @@ body {
 			height: toRem(18);
 		}
 	}
-	// .genres__scrollers
+	// .controllers__scrollers
 	&__scrollers {
 		display: flex;
 		column-gap: toRem(3);
 		align-items: center;
 	}
-	// .genres__scroller
+	// .controllers__scroller
 	&__scroller {
 		width: toRem(16);
 		height: toRem(4);
@@ -460,6 +449,10 @@ body {
 			background: var(--colorButton);
 		}
 	}
+}
+
+.genres {
+	padding-block-end: toRem(50);
 	// .genres__cards
 	&__cards {
 		display: grid;
@@ -530,29 +523,6 @@ body {
 .popular {
 	padding-block-start: toRem(50);
 	padding-block-end: toRem(50);
-	// .popular__controllers
-	&__controllers {
-		@extend .genres__controllers;
-	}
-	// .popular__arrow
-	&__arrow {
-		@extend .genres__arrow;
-		svg {
-			width: toRem(18);
-			height: toRem(18);
-		}
-	}
-	&__scrollers {
-		@extend .genres__scrollers;
-	}
-	// .popular__scroller
-	&__scroller {
-		@extend .genres__scroller;
-		// .popular__scroller--active
-		&--active {
-			@extend .genres__scroller--active;
-		}
-	}
 	// .popular__cards
 	&__cards {
 		display: grid;
@@ -623,33 +593,6 @@ body {
 .trending {
 	padding-block-start: toRem(50);
 	padding-block-end: toRem(50);
-	// .trending__body
-	&__body {
-	}
-	// .trending__controllers
-	&__controllers {
-		@extend .genres__controllers;
-	}
-	// .trending__arrow
-	&__arrow {
-		@extend .genres__arrow;
-		svg {
-			width: toRem(18);
-			height: toRem(18);
-		}
-	}
-	// .trending__scrollers
-	&__scrollers {
-		@extend .genres__scrollers;
-	}
-	// .trending__scroller
-	&__scroller {
-		@extend .genres__scroller;
-		// .trending__scroller--active
-		&--active {
-			@extend .genres__scroller--active;
-		}
-	}
 	// .trending__cards
 	&__cards {
 		display: grid;
@@ -731,33 +674,6 @@ body {
 
 .releases {
 	padding-block-start: toRem(50);
-	// .releases__body
-	&__body {
-	}
-	// .releases__controllers
-	&__controllers {
-		@extend .genres__controllers;
-	}
-	// .releases__arrow
-	&__arrow {
-		@extend .genres__arrow;
-		svg {
-			width: toRem(18);
-			height: toRem(18);
-		}
-	}
-	// .releases__scrollers
-	&__scrollers {
-		@extend .genres__scrollers;
-	}
-	// .releases__scroller
-	&__scroller {
-		@extend .genres__scroller;
-		// .releases__scroller--active
-		&--active {
-			@extend .genres__scroller--active;
-		}
-	}
 	// .releases__cards
 	&__cards {
 		display: grid;
