@@ -258,7 +258,7 @@ body {
 	&__title {
 		text-align: center;
 		color: var(--colorTitle);
-		font-size: toRem(30);
+		@include adaptiveValue("font-size", 30, 24);
 		font-weight: 700;
 		line-height: 1.5;
 	}
@@ -397,6 +397,20 @@ body {
 
 /*------------GENRES-----------*/
 
+.title {
+	color: var(--colorTitle);
+	@include adaptiveValue("font-size", 38, 24);
+	font-weight: 700;
+	line-height: 1.5;
+}
+[class*="__head"] {
+	display: flex;
+	justify-content: space-between;
+	column-gap: toRem(5);
+	align-items: center;
+	margin-block-end: toRem(50);
+}
+
 .genres {
 	padding-block-end: toRem(50);
 	// .genres__container
@@ -404,20 +418,6 @@ body {
 	}
 	// .genres__body
 	&__body {
-	}
-	// .genres__title
-	&__title {
-		display: flex;
-		justify-content: space-between;
-		column-gap: toRem(5);
-		align-items: center;
-		margin-block-end: toRem(50);
-		h2 {
-			color: var(--colorTitle);
-			font-size: toRem(38);
-			font-weight: 700;
-			line-height: 1.5;
-		}
 	}
 	// .genres__controllers
 	&__controllers {
@@ -530,10 +530,6 @@ body {
 .popular {
 	padding-block-start: toRem(50);
 	padding-block-end: toRem(50);
-	// .popular__title
-	&__title {
-		@extend .genres__title;
-	}
 	// .popular__controllers
 	&__controllers {
 		@extend .genres__controllers;
@@ -629,10 +625,6 @@ body {
 	padding-block-end: toRem(50);
 	// .trending__body
 	&__body {
-	}
-	// .trending__title
-	&__title {
-		@extend .genres__title;
 	}
 	// .trending__controllers
 	&__controllers {
@@ -741,10 +733,6 @@ body {
 	padding-block-start: toRem(50);
 	// .releases__body
 	&__body {
-	}
-	// .releases__title
-	&__title {
-		@extend .genres__title;
 	}
 	// .releases__controllers
 	&__controllers {
