@@ -446,6 +446,12 @@ body {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 30.625em) {
+  .hero__title {
+    -webkit-margin-after: 1.25rem;
+            margin-block-end: 1.25rem;
+  }
+}
 .hero__text {
   max-width: 60rem;
   color: var(--mainText);
@@ -455,21 +461,35 @@ body {
   -webkit-margin-after: 1.875rem;
           margin-block-end: 1.875rem;
 }
+@media (max-width: 30.625em) {
+  .hero__text {
+    display: none;
+  }
+}
 .hero__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+  -webkit-margin-after: 3.125rem;
+          margin-block-end: 3.125rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 1.25rem;
-     -moz-column-gap: 1.25rem;
-          column-gap: 1.25rem;
-  -webkit-margin-after: 3.125rem;
-          margin-block-end: 3.125rem;
+}
+@media (max-width: 30.625em) {
+  .hero__button {
+    row-gap: 1.25rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .hero__play {
   display: -webkit-box;
@@ -488,6 +508,9 @@ body {
   padding: 0.875rem 1.5rem;
   border-radius: 0.5rem;
   background: var(--colorButton);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-size: 200% auto;
@@ -507,6 +530,11 @@ body {
 @media (any-hover: hover) {
   .hero__play:hover {
     background-position: right center;
+  }
+}
+@media (max-width: 30.625em) {
+  .hero__play {
+    width: 100%;
   }
 }
 .hero__buttons {
@@ -532,11 +560,6 @@ body {
   width: 1.4375rem;
   height: 1.4375rem;
 }
-@media (any-hover: hover) {
-  .hero__icon:hover path, .hero__icon:focus path {
-    fill: var(--colorButton);
-  }
-}
 .hero__controllers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,6 +570,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 30.625em) {
+  .hero__controllers {
+    display: none;
+  }
 }
 .hero__arrow {
   display: -webkit-box;
@@ -728,6 +756,9 @@ body {
   -webkit-column-gap: 1.875rem;
      -moz-column-gap: 1.875rem;
           column-gap: 1.875rem;
+  overflow: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 .genres__card, .popular__card {
   padding: 1.875rem;
@@ -735,6 +766,7 @@ body {
   border: 0.0625rem solid var(--heroBorder);
   background: var(--cardsBorder);
   position: relative;
+  scroll-snap-align: start;
 }
 .genres__card::before, .popular__card::before {
   content: "";
@@ -804,6 +836,9 @@ body {
   -webkit-column-gap: 1.875rem;
      -moz-column-gap: 1.875rem;
           column-gap: 1.875rem;
+  overflow: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 .popular__images {
   display: -webkit-box;
@@ -876,12 +911,16 @@ body {
   -webkit-column-gap: 1.25rem;
      -moz-column-gap: 1.25rem;
           column-gap: 1.25rem;
+  overflow: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 .trending__card, .releases__card {
   padding: 1.25rem;
   border-radius: 0.75rem;
   border: 0.0625rem solid var(--heroBorder);
   background: var(--cardsBorder);
+  scroll-snap-align: start;
 }
 .trending__images {
   -webkit-margin-after: 1.25rem;
@@ -974,6 +1013,9 @@ body {
   -webkit-column-gap: 1.25rem;
      -moz-column-gap: 1.25rem;
           column-gap: 1.25rem;
+  overflow: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
 }
 .releases__images {
   -webkit-margin-after: 1.25rem;
