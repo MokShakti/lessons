@@ -556,12 +556,12 @@ body {
 /*----------GENRES-----------*/
 
 .genres {
-   padding-block-end: toRem(50);
+   padding-block-end: clamp(1.563rem, 1.171rem + 1.96vw, 3.125rem);
    // .genres__cards
    &__cards {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      column-gap: toRem(30);
+      column-gap: clamp(0.625rem, 0.312rem + 1.57vw, 1.875rem);
       overflow: auto;
       scroll-snap-type: x mandatory;
       padding-block-end: toRem(20);
@@ -574,7 +574,7 @@ body {
    }
    // .genres__card
    &__card {
-      padding: toRem(30);
+      padding: clamp(0.938rem, 0.702rem + 1.18vw, 1.875rem);
       border-radius: toRem(12);
       border: toRem(1) solid var(--heroBorder);
       background: var(--cardsBorder);
@@ -628,13 +628,12 @@ body {
 /*-----------POPULAR-----------*/
 
 .popular {
-   padding-block-start: toRem(50);
-   padding-block-end: toRem(50);
+   padding-block: clamp(1.563rem, 1.171rem + 1.96vw, 3.125rem);
    // .popular__cards
    &__cards {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      column-gap: toRem(30);
+      column-gap: clamp(0.625rem, 0.312rem + 1.57vw, 1.875rem);
       overflow: auto;
       scroll-snap-type: x mandatory;
       padding-block-end: toRem(20);
@@ -698,13 +697,12 @@ body {
 /*----------TRENDING----------*/
 
 .trending {
-   padding-block-start: toRem(50);
-   padding-block-end: toRem(50);
+   padding-block: clamp(1.563rem, 1.171rem + 1.96vw, 3.125rem);
    // .trending__cards
    &__cards {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      column-gap: toRem(20);
+      column-gap: clamp(0.625rem, 0.468rem + 0.78vw, 1.25rem);
       overflow: auto;
       scroll-snap-type: x mandatory;
       padding-block-end: toRem(20);
@@ -790,20 +788,20 @@ body {
 /*----------RELEASES----------*/
 
 .releases {
-   padding-block-start: toRem(50);
+   padding-block-start: clamp(1.563rem, 1.171rem + 1.96vw, 3.125rem);
    // .releases__cards
    &__cards {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      column-gap: toRem(20);
+      column-gap: clamp(0.625rem, 0.468rem + 0.78vw, 1.25rem);
       overflow: auto;
       scroll-snap-type: x mandatory;
       padding-block-end: toRem(20);
       &::-webkit-scrollbar {
          border-radius: toRem(20);
          background: var(--colorButton);
-         width: 79px;
-         height: 5px;
+         width: toRem(79);
+         height: toRem(5);
       }
    }
    // .releases__card
@@ -839,8 +837,8 @@ body {
 /*-----------FOOTER----------*/
 
 .footer {
-   padding-block-start: toRem(100);
-   padding-block-end: toRem(50);
+   padding-block-start: clamp(3.125rem, 2.341rem + 3.92vw, 6.25rem);
+   padding-block-end: clamp(1.563rem, 1.171rem + 1.96vw, 3.125rem);
    background: var(--menuBg);
    // .footer__container
    &__container {
