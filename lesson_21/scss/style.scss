@@ -89,7 +89,6 @@ body {
          z-index: 2;
          background-color: var(--bg);
          transition: all 0.5s;
-
          overflow: auto;
          padding: toRem(100) toRem(15) toRem(30);
       }
@@ -114,7 +113,7 @@ body {
       align-items: center;
       justify-content: center;
       column-gap: toRem(6);
-      border-radius: 12px;
+      border-radius: toRem(12);
       padding-block: toRem(8);
       border: toRem(4) solid var(--menuBorder);
       @media (min-width: toEm(775)) {
@@ -154,6 +153,14 @@ body {
       @media (min-width: toEm(775)) {
          padding-inline: clamp(1rem, 0.299rem + 1.23vw, 1.5rem);
          padding-block: toRem(14);
+      }
+      @media (any-hover: hover) {
+         &:hover {
+            color: var(--colorTitle);
+            font-size: toRem(18);
+            font-weight: 500;
+            line-height: 1.5;
+         }
       }
    }
 }
@@ -222,6 +229,7 @@ body {
       min-height: 100svh;
       display: flex;
       flex-direction: column;
+      justify-content: flex-end;
       position: relative;
       padding-block: toRem(20);
       padding-inline: toRem(50);
@@ -260,7 +268,6 @@ body {
    }
    // .hero__content
    &__content {
-      margin-block-start: toRem(434);
       margin-inline: auto;
    }
    // .hero__title
@@ -289,6 +296,7 @@ body {
    // .hero__button
    &__button {
       display: flex;
+      flex-wrap: wrap;
       column-gap: toRem(20);
       margin-block-end: toRem(50);
       align-items: center;
@@ -394,6 +402,11 @@ body {
       height: toRem(4);
       border-radius: toRem(100);
       background: var(--scrollerColor);
+      &:hover {
+         width: toRem(23);
+         border-radius: toRem(100);
+         background: var(--colorButton);
+      }
       // .hero__scroller--active
       &--active {
          width: toRem(23);
@@ -415,16 +428,32 @@ body {
    }
    // .main__object
    &__object {
+      display: flex;
+      align-items: center;
+      margin-block-start: toRem(50);
+      margin-block-end: toRem(50);
+      padding: toRem(8);
+      border-radius: toRem(8);
+      border: toRem(1) solid var(--heroBorder);
+      background: var(--menuBg);
       @media (min-width: toEm(490)) {
          display: none;
       }
    }
    // .main__movies
-   &__movie {
+   &__movie,
+   &__shows {
       color: var(--mainText);
       font-size: toRem(14);
       font-weight: 500;
       line-height: 1.5;
+      padding: toRem(12) toRem(20);
+      width: 100%;
+      height: 100%;
+      &:hover {
+         border-radius: toRem(6);
+         background: var(--menuBorder);
+      }
    }
    &__movie
    // .main__shows
@@ -454,6 +483,9 @@ body {
       top: 0;
       left: toRem(50);
       transform: translateY(-40%);
+      @media (max-width: toEm(590)) {
+         display: none;
+      }
    }
 }
 
@@ -509,6 +541,9 @@ body {
          background: var(--colorButton);
       }
    }
+   @media (max-width: toEm(590)) {
+      display: none;
+   }
 }
 .tag {
    align-self: flex-start;
@@ -529,6 +564,13 @@ body {
       column-gap: toRem(30);
       overflow: auto;
       scroll-snap-type: x mandatory;
+      padding-block-end: toRem(20);
+      &::-webkit-scrollbar {
+         border-radius: toRem(20);
+         background: var(--colorButton);
+         width: 79px;
+         height: 5px;
+      }
    }
    // .genres__card
    &__card {
@@ -595,6 +637,13 @@ body {
       column-gap: toRem(30);
       overflow: auto;
       scroll-snap-type: x mandatory;
+      padding-block-end: toRem(20);
+      &::-webkit-scrollbar {
+         border-radius: toRem(20);
+         background: var(--colorButton);
+         width: 79px;
+         height: 5px;
+      }
    }
    // .popular__card
    &__card {
@@ -658,6 +707,13 @@ body {
       column-gap: toRem(20);
       overflow: auto;
       scroll-snap-type: x mandatory;
+      padding-block-end: toRem(20);
+      &::-webkit-scrollbar {
+         border-radius: toRem(20);
+         background: var(--colorButton);
+         width: 79px;
+         height: 5px;
+      }
    }
    // .trending__card
    &__card {
@@ -742,6 +798,13 @@ body {
       column-gap: toRem(20);
       overflow: auto;
       scroll-snap-type: x mandatory;
+      padding-block-end: toRem(20);
+      &::-webkit-scrollbar {
+         border-radius: toRem(20);
+         background: var(--colorButton);
+         width: 79px;
+         height: 5px;
+      }
    }
    // .releases__card
    &__card {
