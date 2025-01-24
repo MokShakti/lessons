@@ -463,7 +463,7 @@ body {
    // .main__body
    &__body {
       position: relative;
-      padding: toRem(50);
+      padding: clamp(0.938rem, 0.389rem + 2.74vw, 3.125rem);
       border-radius: toRem(12);
       border: toRem(1) solid var(--heroBorder);
    }
@@ -562,8 +562,10 @@ body {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       column-gap: clamp(0.625rem, 0.312rem + 1.57vw, 1.875rem);
-      overflow: auto;
-      scroll-snap-type: x mandatory;
+      @media (max-width: toEm(900)) {
+         overflow: auto;
+         scroll-snap-type: x mandatory;
+      }
       padding-block-end: toRem(20);
       &::-webkit-scrollbar {
          border-radius: toRem(20);
@@ -574,12 +576,14 @@ body {
    }
    // .genres__card
    &__card {
-      padding: clamp(0.938rem, 0.702rem + 1.18vw, 1.875rem);
+      padding: clamp(0.938rem, -0.635rem + 2.52vw, 1.875rem);
       border-radius: toRem(12);
       border: toRem(1) solid var(--heroBorder);
       background: var(--cardsBorder);
       position: relative;
-      scroll-snap-align: start;
+      @media (max-width: toEm(930)) {
+         scroll-snap-align: start;
+      }
       &::before {
          content: "";
          position: absolute;
@@ -592,10 +596,13 @@ body {
    }
    // .genres__images
    &__images {
-      display: flex;
-      flex-wrap: wrap;
+      // display: flex;
+      // flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 1.47945fr);
       justify-content: center;
       gap: toRem(5);
+      // 47.9452%; /* 105/219 */
    }
    // .genres__image
    &__image {
@@ -621,7 +628,7 @@ body {
    &__pointer {
       width: toRem(18.75);
       height: toRem(16.88);
-      align-self: flex-end;
+      align-self: center;
    }
 }
 
@@ -650,8 +657,8 @@ body {
    }
    // .popular__images
    &__images {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 1.47138fr);
       justify-content: center;
       gap: toRem(10);
    }
@@ -689,7 +696,6 @@ body {
       border-radius: toRem(5);
       background: var(--colorButton);
       display: inline-flex;
-      align-self: flex-start;
       margin-block-end: toRem(4);
    }
 }
