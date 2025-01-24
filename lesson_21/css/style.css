@@ -574,7 +574,7 @@ body {
 }
 .main__body {
   position: relative;
-  padding: 3.125rem;
+  padding: clamp(0.938rem, 0.389rem + 2.74vw, 3.125rem);
   border-radius: 0.75rem;
   border: 0.0625rem solid var(--heroBorder);
 }
@@ -698,11 +698,15 @@ body {
   -webkit-column-gap: clamp(0.625rem, 0.312rem + 1.57vw, 1.875rem);
      -moz-column-gap: clamp(0.625rem, 0.312rem + 1.57vw, 1.875rem);
           column-gap: clamp(0.625rem, 0.312rem + 1.57vw, 1.875rem);
-  overflow: auto;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
   -webkit-padding-after: 1.25rem;
           padding-block-end: 1.25rem;
+}
+@media (max-width: 56.25em) {
+  .genres__cards {
+    overflow: auto;
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+  }
 }
 .genres__cards::-webkit-scrollbar {
   border-radius: 1.25rem;
@@ -711,12 +715,16 @@ body {
   height: 5px;
 }
 .genres__card, .popular__card {
-  padding: clamp(0.938rem, 0.702rem + 1.18vw, 1.875rem);
+  padding: clamp(0.938rem, -0.635rem + 2.52vw, 1.875rem);
   border-radius: 0.75rem;
   border: 0.0625rem solid var(--heroBorder);
   background: var(--cardsBorder);
   position: relative;
-  scroll-snap-align: start;
+}
+@media (max-width: 58.125em) {
+  .genres__card, .popular__card {
+    scroll-snap-align: start;
+  }
 }
 .genres__card::before, .popular__card::before {
   content: "";
@@ -728,8 +736,8 @@ body {
   left: 0;
 }
 .genres__images {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1.47945fr);
   justify-content: center;
   gap: 0.3125rem;
 }
@@ -757,7 +765,7 @@ body {
 .genres__pointer, .popular__pointer {
   width: 1.171875rem;
   height: 1.055rem;
-  align-self: flex-end;
+  align-self: center;
 }
 
 /*-----------POPULAR-----------*/
@@ -783,8 +791,8 @@ body {
   height: 5px;
 }
 .popular__images {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1.47138fr);
   justify-content: center;
   gap: 0.625rem;
 }
@@ -820,7 +828,6 @@ body {
   border-radius: 0.3125rem;
   background: var(--colorButton);
   display: inline-flex;
-  align-self: flex-start;
   -webkit-margin-after: 0.25rem;
           margin-block-end: 0.25rem;
 }
